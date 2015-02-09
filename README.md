@@ -139,3 +139,36 @@ The dev console does the following:
 * Runs the unit tests and reports any test failures.
 * Watches for file changes and re-runs the whole process.
 
+
+## Requiring modules
+
+This boilerplate uses `remoterequire`, a very simple module that just exports a string containing your project's root path, so you can require files without a bunch of relative strings.
+
+Before:
+
+```
+var
+  a = require('../../../lib/a'),
+  b = require('../../../lib/b'),
+  c = require('../../../lib/c');
+```
+
+After:
+
+```
+var
+  root = require('rootrequire'),
+  a = require(root + '/lib/a'),
+  b = require(root + '/lib/b'),
+  c = require(root + '/lib/c'),
+```
+
+### Why?
+
+* You can move things around more easily.
+* Every file documents your app's directory structure for you. You'll know exactly where to look for things.
+* Dazzle your coworkers.
+
+If you find yourself using the same file in a lot of modules, it's probably a better idea to split it out into its own module -- preferably open source. Then you can just install it like any other module so it can live in `node_modules`.
+
+Only use `node_modules` for modules installed by `npm`. That way you won't have to put up with a bunch of vendor noise in version control and pull requests. Just add `node_modules` to your .gitignore file (like it is in this repo).
