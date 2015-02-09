@@ -24,7 +24,9 @@
     "connect-cache-control": "^1.0.0",
     "qconf": "^2.2.0",
     "duplex": "^1.0.0",
-    "page": "^1.6.0"
+    "page": "^1.6.0",
+    "ncp": "^1.0.1",
+    "rootrequire": "^1.0.0"
   },
   "devDependencies": {
     "jshint": "^2.6.0",

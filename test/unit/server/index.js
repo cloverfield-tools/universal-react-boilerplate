@@ -3,7 +3,8 @@
 var
   test = require('tape'),
   supertest = require('supertest'),
-  app = require('../../../server');
+  root = require('rootrequire'),
+  app = require(root + '/server');
 
 module.exports = function client() {
 

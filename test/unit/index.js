@@ -1,5 +1,6 @@
 'use strict';
 
-var webserver = require('./webserver');
+var server = require('./server');
 
-webserver();
+server();
+
