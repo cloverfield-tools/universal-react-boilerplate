@@ -144,7 +144,15 @@ The dev console does the following:
 
 ## Requiring modules
 
-This boilerplate uses `remoterequire`, a very simple module that just exports a string containing your project's root path, so you can require files without a bunch of relative strings.
+To require modules relative to the app root, just put them in `app/node_modules` and require them just like you would require a module installed by npm. For example, if you had a file called `app/node_modules/lib/routes.js` you can require it with:
+
+```
+var routes = require('lib/routes`);
+```
+
+The reason this works is because Node will traverse the parent directories until it finds the `node_modules` directory and use that as the base path for requires. See the [full explanation on StackOverflow](http://stackoverflow.com/questions/10860244/how-to-make-the-require-in-node-js-to-be-always-relative-to-the-root-folder-of-t#answer-24461606).
+
+This boilerplate also has `rootrequire`, a very simple module that just exports a string containing your project's root path, so you can require files without a bunch of relative strings. You can use `rootrequire` if you need to get at files in the root directory, such as `package.json`.
 
 Before:
 
