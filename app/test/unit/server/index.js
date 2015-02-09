@@ -3,7 +3,8 @@
 var
   test = require('tape'),
   supertest = require('supertest'),
-  app = require('server');
+  app = require('server'),
+  arrayIntersect = require('array-intersection');
 
 module.exports = function client() {
 
@@ -25,6 +26,27 @@ module.exports = function client() {
           'Should contain the text, "Hello, World!"');
 
         assert.end();
+      });
+  });
+
+  test('X-powered by header', function (assert) {
+    supertest(app)
+      .get('/')
+      .expect(200)
+      .end(function (err, res) {
+        var
+          headers = res.headers,
+          headerKeys = Object.keys(headers),
+          keys = ['X-powered-by', 'x-powered-by', 'X-Powered-By'],
+          intersection = arrayIntersect(keys, headerKeys);
+
+        assert.error(err, 'Should not return an error.');
+
+        assert.deepEqual(intersection, [],
+          'Should not send x-powered-by headers');
+
+        assert.end();
+
       });
   });
 

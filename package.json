@@ -18,23 +18,25 @@
     "lib": "lib"
   },
   "dependencies": {
-    "version-healthcheck": "^0.1.2",
-    "express": "^4.11.2",
+    "array-intersection": "^0.1.1",
     "bunyan-request-logger": "^0.2.5",
     "connect-cache-control": "^1.0.0",
-    "qconf": "^2.2.0",
     "duplex": "^1.0.0",
-    "page": "^1.6.0",
+    "express": "^4.11.2",
     "ncp": "^1.0.1",
-    "rootrequire": "^1.0.0"
+    "page": "^1.6.0",
+    "qconf": "^2.2.0",
+    "rootrequire": "^1.0.0",
+    "version-healthcheck": "^0.1.2"
   },
   "devDependencies": {
-    "jshint": "^2.6.0",
-    "supertest": "^0.15.0",
-    "watch": "^0.13.0",
-    "tape": "^3.5.0",
+    "array-intersection": "^0.1.1",
     "faucet": "0.0.1",
-    "node-inspector": "^0.8.3"
+    "jshint": "^2.6.0",
+    "node-inspector": "^0.8.3",
+    "supertest": "^0.15.0",
+    "tape": "^3.5.0",
+    "watch": "^0.13.0"
   },
   "repository": {
     "type": "git",
