@@ -38,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ericelliott/node-hello-world-boilerplate.git"
+    "url": "git@github.com:ericelliott/isomorphic-express-boilerplate.git"
   },
   "keywords": [
     "boilerplate",
@@ -49,7 +49,7 @@
   "author": "Eric Elliott",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ericelliott/node-hello-world-boilerplate/issues"
+    "url": "https://github.com/ericelliott/isomorphic-express-boilerplate/issues"
   },
-  "homepage": "https://github.com/ericelliott/node-hello-world-boilerplate"
+  "homepage": "https://github.com/ericelliott/isomorphic-express-boilerplate"
 }
