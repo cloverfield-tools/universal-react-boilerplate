@@ -1,0 +1,53 @@
+{
+  "name": "node-hello-world-boilerplate",
+  "version": "0.0.0",
+  "description": "A boilerplate Node.js / Express app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "node --debug index.js",
+    "inspect": "node-inspector",
+    "test": "node test/unit/index.js | faucet",
+    "lint": "jshint .",
+    "build": "mkdir -p config && git rev-parse --short HEAD > config/BUILD",
+    "watch:build": "watch --wait=5 'npm run lint && npm run build && npm run test' .",
+    "dev": "npm run watch:build"
+  },
+  "directories": {
+    "test": "test",
+    "lib": "lib"
+  },
+  "dependencies": {
+    "version-healthcheck": "^0.1.2",
+    "express": "^4.11.2",
+    "bunyan-request-logger": "^0.2.5",
+    "connect-cache-control": "^1.0.0",
+    "qconf": "^2.2.0",
+    "duplex": "^1.0.0",
+    "page": "^1.6.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.6.0",
+    "supertest": "^0.15.0",
+    "watch": "^0.13.0",
+    "tape": "^3.5.0",
+    "faucet": "0.0.1",
+    "node-inspector": "^0.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ericelliott/node-hello-world-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "node",
+    "express",
+    "html5"
+  ],
+  "author": "Eric Elliott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericelliott/node-hello-world-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ericelliott/node-hello-world-boilerplate"
+}
