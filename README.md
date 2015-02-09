@@ -44,7 +44,11 @@ In my experience, every team is always behind schedule if you ask them to do wor
 
 ## What's inside?
 
-There are some concerns that legitimately belong only on the server, or only on the client, so there are `client/` and `server/` directories for code that is specific to one or the other.
+There are some concerns that legitimately belong only on the server, or only on the client, so there are `client/` and `server/` directories for code that is specific to one or the other. Shared code goes in `lib/`:
+
+* `app/node_modules/lib`    - Shared code.
+* `app/node_modules/client` - For browser-only code.
+* `app/node_modules/server` - For server-only code.
 
 ```
 .
@@ -57,7 +61,7 @@ There are some concerns that legitimately belong only on the server, or only on 
 │   │   │   └── index.js
 │   │   ├── lib
 │   │   │   └── app.js
-│   │   └── public
+│   │   ├── public
 │   │   │   ├── index.html
 │   │   │   └── js
 │   │   │       └── vendor
