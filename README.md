@@ -4,6 +4,8 @@ A node app that says, "Hello, world!"
 
 This is an [isomorphic](http://isomorphic.net/) Node application boilerplate using Express 4.x.
 
+Written for the ["Learn JavaScript with Eric Elliott" courses](https://ericelliottjs.com/). A series of courses to teach people how to build great JavaScript apps for production. Don't just learn JavaScript. Learn how to build amazing things.
+
 Isomorphic means that it's designed to run a lot of the same code on both the client and the server. There are many advantages to building apps this way, but the primary advantages are:
 
 * Cross-functional teams. Since everything is written in JavaScript, it's easier to build teams who know how to work on both the client and server sides of the app.
