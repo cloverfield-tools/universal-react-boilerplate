@@ -21,6 +21,12 @@ Isomorphic means that it's designed to run a lot of the same code on both the cl
 
 ## Tech stack
 
+Take a look at the [Roadmap](https://github.com/ericelliott/isomorphic-express-boilerplate/issues/4) for an idea of where this is going. Help is welcome and encouraged! =)
+
+### Current status
+
+This is already very valuable as-is. Read on for details.
+
 The isomorphic boilerplate use standard Node modules to author all of the code. All open-source modules are sourced from `npm`.
 
 **Why not use Bower and AMD?** Lots of reasons:
