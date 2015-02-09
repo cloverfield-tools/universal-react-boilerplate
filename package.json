@@ -4,13 +4,13 @@
   "description": "A boilerplate Node.js / Express app",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "debug": "node --debug index.js",
+    "start": "node app/index.js",
+    "debug": "node --debug app/index.js",
     "inspect": "node-inspector",
-    "test": "node test/unit/index.js | faucet",
+    "test": "node app/test/unit/index.js | faucet",
     "lint": "jshint .",
     "build": "mkdir -p config && git rev-parse --short HEAD > config/BUILD",
-    "watch:build": "watch --wait=5 'npm run lint && npm run build && npm run test' .",
+    "watch:build": "watch --wait=5 'npm run lint && npm run build && npm run test' ./app/",
     "dev": "npm run watch:build"
   },
   "directories": {

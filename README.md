@@ -50,29 +50,31 @@ There are some concerns that legitimately belong only on the server, or only on 
 .
 ├── LICENSE
 ├── README.md
-├── client
-│   └── index.js
+├── app
+│   ├── index.js
+│   ├── node_modules
+│   │   ├── client
+│   │   │   └── index.js
+│   │   ├── lib
+│   │   │   └── app.js
+│   │   └── server
+│   │       └── index.js
+│   └── test
+│       ├── functional
+│       │   └── index.js
+│       └── unit
+│           ├── index.js
+│           └── server
+│               └── index.js
 ├── config
 │   └── BUILD
-├── index.js
-├── lib
-│   └── app.js
-├── package.json
-├── public
-│   ├── index.html
-│   └── js
-│       └── vendor
-│           └── html5shiv.js
-├── server
-│   └── index.js
-└── test
-    ├── functional
-    │   └── index.js
-    └── unit
-        ├── index.js
-        ├── npm-debug.log
-        └── webserver
-            └── index.js
+├── npm-debug.log
+└── package.json
+└── public
+    ├── index.html
+    └── js
+        └── vendor
+            └── html5shiv.js
 ```
 
 

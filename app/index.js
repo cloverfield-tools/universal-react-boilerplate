@@ -1,7 +1,7 @@
 'use strict';
 
 var
-  app = require('./lib/webserver.js'),
+  app = require('server'),
   configure = require('qconf');
 
 var
