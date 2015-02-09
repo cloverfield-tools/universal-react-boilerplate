@@ -57,6 +57,11 @@ There are some concerns that legitimately belong only on the server, or only on 
 │   │   │   └── index.js
 │   │   ├── lib
 │   │   │   └── app.js
+│   │   └── public
+│   │   │   ├── index.html
+│   │   │   └── js
+│   │   │       └── vendor
+│   │   │           └── html5shiv.js
 │   │   └── server
 │   │       └── index.js
 │   └── test
@@ -68,12 +73,7 @@ There are some concerns that legitimately belong only on the server, or only on 
 │               └── index.js
 ├── config
 │   └── BUILD
-├── package.json
-└── public
-    ├── index.html
-    └── js
-        └── vendor
-            └── html5shiv.js
+└── package.json
 ```
 
 
