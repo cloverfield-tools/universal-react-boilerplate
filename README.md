@@ -68,7 +68,6 @@ There are some concerns that legitimately belong only on the server, or only on 
 │               └── index.js
 ├── config
 │   └── BUILD
-├── npm-debug.log
 ├── package.json
 └── public
     ├── index.html
