@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-express-boilerplate",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A boilerplate Node.js / Express app",
   "main": "index.js",
   "scripts": {
