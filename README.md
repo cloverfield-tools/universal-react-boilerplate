@@ -12,7 +12,7 @@ The Isomorphic Express Boilerplate was written for the ["Learn JavaScript with E
 
 ## Isomorphic JavaScript
 
-Isomorphic means that it's designed to run a lot of the same code on both the client and the server. *(Not to be confused with isomorphisms from category theory / functional programming. That's a totally different thing.)*
+Isomorphic means that it's designed to run a lot of the same code on both the client and the server. Typically that includes a lot of rendering and domain logic. *(Not to be confused with isomorphisms from category theory / functional programming. That's a totally different thing.)*
 
 There are many advantages to building apps this way, but the primary advantages are:
 
