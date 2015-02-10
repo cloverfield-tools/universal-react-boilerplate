@@ -2,7 +2,7 @@
 
 A node app that says, "Hello, world!"
 
-This is an [isomorphic](http://isomorphic.net/) Node application boilerplate using Express 4.x.
+This is an isomorphic Node application boilerplate using Express 4.x.
 
 
 ## Learn JavaScript with Eric Elliott
@@ -12,7 +12,9 @@ The Isomorphic Express Boilerplate was written for the ["Learn JavaScript with E
 
 ## Isomorphic JavaScript
 
-Isomorphic means that it's designed to run a lot of the same code on both the client and the server. There are many advantages to building apps this way, but the primary advantages are:
+Isomorphic means that it's designed to run a lot of the same code on both the client and the server. *(Not to be confused with isomorphisms from category theory / functional programming. That's a totally different thing.)*
+
+There are many advantages to building apps this way, but the primary advantages are:
 
 * Cross-functional teams. Since everything is written in JavaScript, it's easier to build teams who know how to work on both the client and server sides of the app.
 * Write once, run everywhere. With the exception of a few library substitutions and browser polyfills, the code is shared, which means you have to write about half the code you'd write working on a non-isomorphic app.
