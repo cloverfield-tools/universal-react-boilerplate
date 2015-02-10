@@ -190,4 +190,8 @@ var
 
 If you find yourself using the same file in a lot of modules, it's probably a better idea to split it out into its own module -- preferably open source. Then you can just install it like any other module so it can live in `node_modules`.
 
-Only use `node_modules` for modules installed by `npm`. That way you won't have to put up with a bunch of vendor noise in version control and pull requests. Just add `node_modules` to your .gitignore file (like it is in this repo).
+### Recap
+
+* `node_modules` for modules installed by `npm`. That way you won't have to put up with a bunch of vendor noise in version control and pull requests. Just add `node_modules` to your .gitignore file (like it is in this repo).
+* `app/node_modules` for your application-level code that doesn't belong in `npm`. This should contain all your business logic and application secret-sauce. You DO want this in version control. See `.gitignore` to learn how to configure it.
+* `rootrequire` to get at stuff relative to the project root folder. You should only need to use this very rarely -- for example, to easily require `package.json`.
