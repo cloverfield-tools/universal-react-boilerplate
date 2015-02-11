@@ -7,7 +7,7 @@
     "start": "node app/index.js",
     "debug": "node --debug app/index.js",
     "inspect": "node-inspector",
-    "test": "node app/test/unit/index.js | faucet",
+    "test": "node app/test/unit/index.js | tap-bail | faucet",
     "lint": "jshint .",
     "build": "mkdir -p config && git rev-parse --short HEAD > config/BUILD",
     "watch:build": "watch --wait=5 'npm run lint && npm run build && npm run test' ./app/",
@@ -34,7 +34,10 @@
     "node-inspector": "^0.8.3",
     "supertest": "^0.15.0",
     "tape": "^3.5.0",
-    "watch": "^0.13.0"
+    "watch": "^0.13.0",
+    "faucet": "0.0.1",
+    "node-inspector": "^0.8.3",
+    "tap-bail": "0.0.0"
   },
   "repository": {
     "type": "git",
