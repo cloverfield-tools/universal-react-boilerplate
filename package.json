@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-express-boilerplate",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "description": "A boilerplate Node.js / Express app",
   "main": "index.js",
   "scripts": {
@@ -35,8 +35,6 @@
     "supertest": "^0.15.0",
     "tape": "^3.5.0",
     "watch": "^0.13.0",
-    "faucet": "0.0.1",
-    "node-inspector": "^0.8.3",
     "tap-bail": "0.0.0"
   },
   "repository": {
