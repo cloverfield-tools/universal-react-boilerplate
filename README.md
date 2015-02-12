@@ -65,26 +65,33 @@ There are some concerns that legitimately belong only on the server, or only on 
 ├── app
 │   ├── index.js
 │   ├── node_modules
-│   │   ├── client
-│   │   │   └── index.js
-│   │   ├── lib
-│   │   │   └── app.js
-│   │   ├── public
-│   │   │   ├── index.html
-│   │   │   └── js
-│   │   │       └── vendor
-│   │   │           └── html5shiv.js
-│   │   └── server
-│   │       └── index.js
+│   │   ├── client
+│   │   │   └── index.js
+│   │   ├── lib
+│   │   │   └── app.js
+│   │   ├── public
+│   │   │   ├── index.html
+│   │   │   └── js
+│   │   │       └── vendor
+│   │   │           └── html5shiv.js
+│   │   └── server
+│   │       └── index.js
 │   └── test
 │       ├── functional
-│       │   └── index.js
+│       │   ├── acceptance
+│       │   │   └── index.js
+│       │   ├── index.js
+│       │   └── smoke
+│       │       └── index.js
 │       └── unit
+│           ├── client
+│           │   └── index.js
 │           ├── index.js
 │           └── server
 │               └── index.js
 ├── config
 │   └── BUILD
+├── node_modules
 └── package.json
 ```
 
