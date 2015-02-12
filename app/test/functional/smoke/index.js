@@ -2,7 +2,7 @@
 
 var
   selenium = require('selenium-sauce'),
-  assert = require('tape');
+  test = require('tape');
 
 // Loads the config file and invokes the callback once for each browser
 module.exports = new selenium({   // Configuration options
@@ -31,8 +31,6 @@ module.exports = new selenium({   // Configuration options
   }
 },
 function browse(browser) {
-  var args = arguments;
-  assert.equal({}, args, '`browse()` arguments dump');
 
   // Initialize the browser
   browser.init(function(err) {
@@ -40,14 +38,14 @@ function browse(browser) {
 
     // Load a url into the browser
     browser.url('http://google.com', function get() {
+      test('Index page', function (assert) {
 
-      assert.equal({}, browser, 'Browser object dump');
+        // Tell SauceLabs that the test was successful
+        browser.passed(true, function report() {
+          assert.pass('tests finished.');
+          assert.end();
+        });
 
-      assert.equal({}, arguments, '`get()` arguments dump');
-
-      // Tell SauceLabs that the test was successful
-      browser.report(true, function report() {
-        assert.equal({}, arguments, '`report()` arguments dump');
       });
     });
   });

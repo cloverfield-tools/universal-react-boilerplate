@@ -7,10 +7,14 @@
     "start": "node app/index.js",
     "debug": "node --debug app/index.js",
     "inspect": "node-inspector",
-    "test": "node app/test/unit/index.js | tap-bail | faucet",
+    "test": "node app/test/unit/index.js | tap-bail",
+    "test-dev": "node app/test/unit/index.js | tap-bail | faucet",
+    "functional": "node app/test/functional/index.js",
     "lint": "jshint .",
     "build": "mkdir -p config && git rev-parse --short HEAD > config/BUILD",
-    "watch:build": "watch --wait=5 'npm run lint && npm run build && npm run test' ./app/",
+    "validate": "npm run lint && npm run build && npm run test && npm run functional && npm outdated --depth 0",
+    "validate-dev": "npm run lint && npm run build && npm outdated && npm run test-dev",
+    "watch:build": "watch --wait=5 'npm run validate-dev' ./app/",
     "dev": "npm run watch:build"
   },
   "directories": {
