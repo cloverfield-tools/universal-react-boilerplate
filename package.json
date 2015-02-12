@@ -35,7 +35,8 @@
     "supertest": "^0.15.0",
     "tape": "^3.5.0",
     "watch": "^0.13.0",
-    "tap-bail": "0.0.0"
+    "tap-bail": "0.0.0",
+    "selenium-sauce": "^0.3.4"
   },
   "repository": {
     "type": "git",
