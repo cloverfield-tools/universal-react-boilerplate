@@ -35,8 +35,8 @@ The isomorphic boilerplate use standard Node modules to author all of the code. 
 
 * `npm` has 5x more modules than Bower, 60% of which are browser compatible, and `npm` is growing faster than Bower. In fact, `npm` is the largest package repository available for any programming language.
 * Browserify lets you bundle Node style modules for the browser. It handles dependencies in a way that is compatible with the way that Node does.
-* Typical Node applications are not written using AMD modules or Bower.
-* Bower modules which frequently assume they're running in a browser environment and do things that don't make any sense in the server environment.
+* Typical Node applications are not written using AMD modules or Bower, so sharing code becomes more complicated when you author with AMD.
+* Bower modules frequently assume they're running in a browser environment and do things that don't make any sense in the server environment.
 * Typical AMD apps default to asynchronously loading all the modules. That's bad for performance. See below.
 * 2010 called. They want you to know that AMD was always intended to be a temporary hack until something better came along. Something better has come along. Welcome to the Isomorphic future. ;)
 
