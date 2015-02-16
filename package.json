@@ -16,7 +16,7 @@
     "validate-dev": "npm run lint && npm run build && npm outdated && npm run test-dev",
     "watch:build": "watch --wait=5 'npm run validate-dev' ./app/",
     "dev": "npm run watch:build",
-    "version-healthchecker": "npm run build && node app/version-healthchecker.js"
+    "healthcheck": "node app/healthcheck.js"
   },
   "directories": {
     "test": "test",

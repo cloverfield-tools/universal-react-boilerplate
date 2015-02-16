@@ -2,7 +2,7 @@
 
 var
   server = require('./server'),
-  versionHealthchecker = require('./version-healthchecker');
+  healthcheck = require('./healthcheck');
 
 server();
-versionHealthchecker();
+healthcheck();

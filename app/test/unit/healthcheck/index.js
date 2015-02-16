@@ -3,7 +3,7 @@
 var
   test = require('tape'),
   supertest = require('supertest'),
-  app = require('version-healthchecker'),
+  app = require('healthcheck'),
   arrayIntersect = require('array-intersection'),
   fs = require('fs');
 
@@ -14,7 +14,7 @@ var
 
 module.exports = function client() {
 
-  test('Version healthchecker', function (assert) {
+  test('Healthcheck server', function (assert) {
     supertest(app)
       .get('/version')
       .set('Accept', 'application/json')
