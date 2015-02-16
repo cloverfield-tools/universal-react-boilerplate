@@ -1,6 +1,8 @@
 'use strict';
 
-var server = require('./server');
+var
+  server = require('./server'),
+  versionHealthchecker = require('./version-healthchecker');
 
 server();
-
+versionHealthchecker();
