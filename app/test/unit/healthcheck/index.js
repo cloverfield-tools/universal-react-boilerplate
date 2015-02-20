@@ -5,11 +5,12 @@ var
   supertest = require('supertest'),
   app = require('healthcheck'),
   arrayIntersect = require('array-intersection'),
-  fs = require('fs');
+  fs = require('fs'),
+  root = require('rootrequire');
 
 var 
-  pkg = require(__dirname + '/../../../../package.json'),
-  buildPath = __dirname + '/../../../../config/BUILD',
+  pkg = require(root + '/package.json'),
+  buildPath = root + '/config/BUILD',
   build = fs.readFileSync(buildPath, 'utf8').trim();
 
 module.exports = function client() {
