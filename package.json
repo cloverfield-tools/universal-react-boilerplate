@@ -15,13 +15,15 @@
     "validate": "npm run lint && npm run build && npm run test && npm run functional && npm outdated --depth 0",
     "validate-dev": "npm run lint && npm run build && npm outdated && npm run test-dev",
     "watch:build": "watch --wait=5 'npm run validate-dev' ./app/",
-    "dev": "npm run watch:build"
+    "dev": "npm run watch:build",
+    "browserify": "browserify app/node_modules/client -o app/node_modules/public/js/bundle.js"
   },
   "directories": {
     "test": "test",
     "lib": "lib"
   },
   "dependencies": {
+    "browserify": "^8.1.3",
     "bunyan-request-logger": "^0.2.5",
     "connect-cache-control": "^1.0.0",
     "duplex": "^1.0.0",
