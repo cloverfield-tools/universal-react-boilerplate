@@ -4,3 +4,4 @@ node_modules
 config/BUILD
 npm-debug.log
 bundle.js
+bundle.map.json
