@@ -11,12 +11,12 @@
     "test-dev": "node app/test/unit/index.js | tap-bail | faucet",
     "functional": "node app/test/functional/index.js",
     "lint": "jshint .",
-    "build": "mkdir -p config && git rev-parse --short HEAD > config/BUILD",
+    "build": "mkdir -p config && git rev-parse --short HEAD > config/BUILD && npm run browserify",
     "validate": "npm run lint && npm run build && npm run test && npm run functional && npm outdated --depth 0",
     "validate-dev": "npm run lint && npm run build && npm outdated && npm run test-dev",
     "watch:build": "watch --wait=5 'npm run validate-dev' ./app/",
     "dev": "npm run watch:build",
-    "browserify": "browserify app/node_modules/client -o app/node_modules/public/js/bundle.js"
+    "browserify": "browserify app/node_modules/client -d -p [minifyify --map bundle.map.json --output app/node_modules/public/js/bundle.map.json] > app/node_modules/public/js/bundle.js"
   },
   "directories": {
     "test": "test",
@@ -28,6 +28,7 @@
     "connect-cache-control": "^1.0.0",
     "duplex": "^1.0.0",
     "express": "^4.11.2",
+    "minifyify": "^6.2.2",
     "page": "^1.6.0",
     "qconf": "^2.2.0",
     "rootrequire": "^1.0.0",
