@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-express-boilerplate",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A boilerplate Node.js / Express app",
   "main": "index.js",
   "scripts": {
@@ -33,11 +33,10 @@
     "version-healthcheck": "^0.1.2"
   },
   "devDependencies": {
-    "minifyify": "^6.2.2",
+    "minifyify": "^6.3.0",
     "array-intersection": "^0.1.1",
     "faucet": "0.0.1",
     "jshint": "^2.6.0",
-    "minifyify": "^6.3.0",
     "node-inspector": "^0.9.1",
     "selenium-sauce": "^0.3.4",
     "supertest": "^0.15.0",
