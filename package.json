@@ -14,7 +14,7 @@
     "build": "mkdir -p config && git rev-parse --short HEAD > config/BUILD && npm run browserify",
     "validate": "npm run lint && npm run build && npm run test && npm run functional && npm outdated --depth 0",
     "validate-dev": "npm run lint && npm run build && npm outdated && npm run test-dev",
-    "watch:build": "watch --wait=5 'npm run validate-dev' ./app/",
+    "watch:build": "watch --wait=8 'npm run validate-dev' ./app/",
     "dev": "npm run watch:build",
     "browserify": "browserify app/node_modules/client -d -p [minifyify --map bundle.map.json --output app/node_modules/public/js/bundle.map.json] > app/node_modules/public/js/bundle.js"
   },
@@ -23,27 +23,28 @@
     "lib": "lib"
   },
   "dependencies": {
-    "browserify": "^8.1.3",
-    "bunyan-request-logger": "^0.2.5",
+    "bunyan-request-logger": "^0.2.6",
     "connect-cache-control": "^1.0.0",
     "duplex": "^1.0.0",
-    "express": "^4.11.2",
-    "minifyify": "^6.2.2",
-    "page": "^1.6.0",
+    "express": "^4.12.0",
+    "page": "^1.6.1",
     "qconf": "^2.2.0",
     "rootrequire": "^1.0.0",
     "version-healthcheck": "^0.1.2"
   },
   "devDependencies": {
+    "minifyify": "^6.2.2",
     "array-intersection": "^0.1.1",
     "faucet": "0.0.1",
     "jshint": "^2.6.0",
-    "node-inspector": "^0.8.3",
+    "minifyify": "^6.3.0",
+    "node-inspector": "^0.9.1",
+    "selenium-sauce": "^0.3.4",
     "supertest": "^0.15.0",
-    "tape": "^3.5.0",
-    "watch": "^0.13.0",
     "tap-bail": "0.0.0",
-    "selenium-sauce": "^0.3.4"
+    "tape": "^3.5.0",
+    "watch": "^0.14.0",
+    "browserify": "^9.0.3"
   },
   "repository": {
     "type": "git",
