@@ -41,7 +41,7 @@ The isomorphic boilerplate use standard Node modules to author all of the code. 
 * 2010 called. They want you to know that AMD was always intended to be a temporary hack until something better came along. Something better has come along. Welcome to the Isomorphic future. ;)
 
 
-### The problem with AMDs async loading default
+### The problem with AMD's async loading default
 
 Asynchronously loading all your modules by default is really bad for application start up performance because all those requests create latency queues which can be really painful on mobile devices. HTTP2 / SPDY are changing that in modern browsers, but people often use their mobile devices for years without upgrading the browsers on them. I recommend bundling all your commonly used behavior (including templates and CSS) into a single, compressed JavaScript file in order to minimize request latency.
 
