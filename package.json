@@ -4,7 +4,7 @@
   "description": "A boilerplate Node.js / Express app",
   "main": "index.js",
   "scripts": {
-    "start": "node app/index.js",
+    "start": "node app/index.js && npm run start-healthcheck",
     "debug": "node --debug app/index.js",
     "inspect": "node-inspector",
     "test": "node app/test/unit/index.js | tap-bail",
@@ -16,7 +16,7 @@
     "validate-dev": "npm run lint && npm run build && npm outdated && npm run test-dev",
     "watch:build": "watch --wait=5 'npm run validate-dev' ./app/",
     "dev": "npm run watch:build",
-    "healthcheck": "node app/healthcheck.js",
+    "start-healthcheck": "node app/healthcheck.js",
     "browserify": "browserify app/node_modules/client -d -p [minifyify --map bundle.map.json --output app/node_modules/public/js/bundle.map.json] > app/node_modules/public/js/bundle.js"
   },
   "directories": {

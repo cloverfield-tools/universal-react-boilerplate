@@ -4,7 +4,6 @@ var
   test = require('tape'),
   supertest = require('supertest'),
   app = require('healthcheck'),
-  arrayIntersect = require('array-intersection'),
   fs = require('fs'),
   root = require('rootrequire');
 
@@ -25,11 +24,7 @@ module.exports = function client() {
         var
           body = JSON.parse(res.text),
           name = pkg.name,
-          version = pkg.version,
-          headers = res.headers,
-          headerKeys = Object.keys(headers),
-          keys = ['X-powered-by', 'x-powered-by', 'X-Powered-By'],
-          intersection = arrayIntersect(keys, headerKeys);
+          version = pkg.version;
 
         assert.error(err, 'Should not return an error.');
 
@@ -41,9 +36,6 @@ module.exports = function client() {
 
         assert.equal(build, body.build,
           'Should return app build hash');
-
-        assert.deepEqual(intersection, [],
-          'Should not send X-Powered-By header');
 
         assert.end();
       });
