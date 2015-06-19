@@ -9,6 +9,20 @@ This is a universal JavaScript application boilerplate using Express 4.x and Rea
 
 The Universal React Boilerplate was written for the ["Learn JavaScript with Eric Elliott" courses](https://ericelliottjs.com/). A series of courses to teach people how to build great JavaScript apps for production. Don't just learn JavaScript. Learn how to build amazing things.
 
+## Status
+
+### Name Change Underway
+
+This repository began live as the "isomorphic-express-boilerplate". That confused a lot of people, so when Michael Jackson suggested ["Universal JavaScript"](https://medium.com/@mjackson/universal-javascript-4761051b7ae9), I immediately jumped on it. A lot of the issues and documentation still refers to "isomorphic".
+
+### ES6 updates coming
+
+ES6 recently became the official standard, and there Babel is a great way to start using it today, so we'll be updating everything in the repo for Babel / ES6!
+
+### React
+
+Initially we were looking at several different library possibilities, but we settled on React. Now we just need to hook up [react-engine](https://github.com/paypal/react-engine) (by PayPal) to get the universal renders and client bootstrap going.
+
 
 ## Universal JavaScript
 
