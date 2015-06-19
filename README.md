@@ -184,26 +184,6 @@ var routes = require('lib/routes`);
 
 The reason this works is because Node will traverse the parent directories until it finds the `node_modules` directory and use that as the base path for requires. See the [full explanation on StackOverflow](http://stackoverflow.com/questions/10860244/how-to-make-the-require-in-node-js-to-be-always-relative-to-the-root-folder-of-t#answer-24461606).
 
-This boilerplate also has `rootrequire`, a very simple module that just exports a string containing your project's root path, so you can require files without a bunch of relative strings. You can use `rootrequire` if you need to get at files in the root directory, such as `package.json`.
-
-Before:
-
-```
-var
-  a = require('../../../lib/a'),
-  b = require('../../../lib/b'),
-  c = require('../../../lib/c');
-```
-
-After:
-
-```
-var
-  root = require('rootrequire'),
-  a = require(root + '/lib/a'),
-  b = require(root + '/lib/b'),
-  c = require(root + '/lib/c'),
-```
 
 ### Why?
 
@@ -217,7 +197,6 @@ If you find yourself using the same file in a lot of modules, it's probably a be
 
 * `node_modules` for modules installed by `npm`. That way you won't have to put up with a bunch of vendor noise in version control and pull requests. Just add `node_modules` to your .gitignore file (like it is in this repo).
 * `app/node_modules` for your application-level code that doesn't belong in `npm`. This should contain all your business logic and application secret-sauce. You DO want this in version control. See `.gitignore` to learn how to configure it.
-* `rootrequire` to get at stuff relative to the project root folder. You should only need to use this very rarely -- for example, to easily require `package.json`.
 
 
 ## Courses
