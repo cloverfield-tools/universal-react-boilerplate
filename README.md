@@ -1,35 +1,35 @@
-# The Isomorphic Express Boilerplate
+# Universal React Boilerplate
 
 A node app that says, "Hello, world!"
 
-This is an isomorphic Node application boilerplate using Express 4.x.
+This is a universal JavaScript application boilerplate using Express 4.x and React.
 
 
 ## Learn JavaScript with Eric Elliott
 
-The Isomorphic Express Boilerplate was written for the ["Learn JavaScript with Eric Elliott" courses](https://ericelliottjs.com/). A series of courses to teach people how to build great JavaScript apps for production. Don't just learn JavaScript. Learn how to build amazing things.
+The Universal React Boilerplate was written for the ["Learn JavaScript with Eric Elliott" courses](https://ericelliottjs.com/). A series of courses to teach people how to build great JavaScript apps for production. Don't just learn JavaScript. Learn how to build amazing things.
 
 
-## Isomorphic JavaScript
+## Universal JavaScript
 
-Isomorphic means that it's designed to run a lot of the same code on both the client and the server. Typically that includes a lot of rendering and domain logic. *(Not to be confused with isomorphisms from category theory / functional programming. That's a totally different thing.)*
+Universal (aka *"isomorphic"*) means that it's designed to run a lot of the same code on both the client and the server. Typically that includes a lot of rendering and domain logic.
 
 There are many advantages to building apps this way, but the primary advantages are:
 
 * Cross-functional teams. Since everything is written in JavaScript, it's easier to build teams who know how to work on both the client and server sides of the app.
-* Write once, run everywhere. With the exception of a few library substitutions and browser polyfills, the code is shared, which means you have to write about half the code you'd write working on a non-isomorphic app.
+* Write once, run everywhere. With the exception of a few library substitutions and browser polyfills, the code is shared, which means you have to write about half the code you'd write working on a non-universal app.
 * More productive developers. Since the app is more consistent across the stack, there's no context switching when you need to maintain application behavior on both sides of the stack. Write the behavior once, and you're done. Context switching slows developers down significantly.
 
 
 ## Tech stack
 
-Take a look at the [Roadmap](https://github.com/ericelliott/isomorphic-express-boilerplate/issues/4) for an idea of where this is going. Help is welcome and encouraged! =)
+Take a look at the [Roadmap](https://github.com/ericelliott/universal-react-boilerplate/issues/4) for an idea of where this is going. Help is welcome and encouraged! =)
 
 ### Current status
 
 This is already very valuable as-is. Read on for details.
 
-The isomorphic boilerplate use standard Node modules to author all of the code. All open-source modules are sourced from `npm`.
+The universal boilerplate uses standard JavaScript modules to author all of the code. All open-source modules are sourced from `npm`.
 
 **Why not use Bower and AMD?** Lots of reasons:
 
@@ -38,7 +38,7 @@ The isomorphic boilerplate use standard Node modules to author all of the code. 
 * Typical Node applications are not written using AMD modules or Bower, so sharing code becomes more complicated when you author with AMD.
 * Bower modules frequently assume they're running in a browser environment and do things that don't make any sense in the server environment.
 * Typical AMD apps default to asynchronously loading all the modules. That's bad for performance. See below.
-* 2010 called. They want you to know that AMD was always intended to be a temporary hack until something better came along. Something better has come along. Welcome to the Isomorphic future. ;)
+* 2010 called. They want you to know that AMD was always intended to be a temporary hack until something better came along. Something better has come along. Welcome to the universal future. ;)
 
 
 ### The problem with AMD's async loading default
