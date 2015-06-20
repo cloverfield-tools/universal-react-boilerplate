@@ -30,9 +30,9 @@ Universal (aka *"isomorphic"*) means that it's designed to run a lot of the same
 
 There are many advantages to building apps this way, but the primary advantages are:
 
-* Cross-functional teams. Since everything is written in JavaScript, it's easier to build teams who know how to work on both the client and server sides of the app.
-* Write once, run everywhere. With the exception of a few library substitutions and browser polyfills, the code is shared, which means you have to write about half the code you'd write working on a non-universal app.
-* More productive developers. Since the app is more consistent across the stack, there's no context switching when you need to maintain application behavior on both sides of the stack. Write the behavior once, and you're done. Context switching slows developers down significantly.
+* **Cross-functional teams.** Since everything is written in JavaScript, it's easier to build teams who know how to work on both the client and server sides of the app.
+* **Write once, run everywhere.** With the exception of a few library substitutions and browser polyfills, the code is shared, which means you have to write about half the code you'd write working on a non-universal app.
+* **More productive developers.** Since the app is more consistent across the stack, there's no context switching when you need to maintain application behavior on both sides of the stack. Write the behavior once, and you're done. Context switching slows developers down significantly.
 
 
 ## Tech stack
