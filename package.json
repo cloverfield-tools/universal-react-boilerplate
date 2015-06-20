@@ -24,27 +24,27 @@
     "lib": "lib"
   },
   "dependencies": {
-    "bunyan-request-logger": "^0.2.6",
+    "bunyan-request-logger": "^1.0.1",
     "connect-cache-control": "^1.0.0",
     "duplex": "^1.0.0",
-    "express": "^4.12.0",
-    "page": "^1.6.1",
+    "express": "^4.12.4",
+    "page": "^1.6.3",
     "qconf": "^2.2.0",
     "rootrequire": "^1.0.0",
     "version-healthcheck": "^0.1.2"
   },
   "devDependencies": {
-    "minifyify": "^6.3.0",
-    "array-intersection": "^0.1.1",
+    "minifyify": "^7.0.1",
+    "array-intersection": "^0.1.2",
     "faucet": "0.0.1",
-    "jshint": "^2.6.0",
-    "node-inspector": "^0.9.1",
+    "jshint": "^2.8.0",
+    "node-inspector": "^0.10.2",
     "selenium-sauce": "^0.3.4",
-    "supertest": "^0.15.0",
+    "supertest": "^1.0.1",
     "tap-bail": "0.0.0",
-    "tape": "^3.5.0",
-    "watch": "^0.14.0",
-    "browserify": "^9.0.3"
+    "tape": "^4.0.0",
+    "watch": "^0.16.0",
+    "browserify": "^10.2.4"
   },
   "repository": {
     "type": "git",
