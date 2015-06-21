@@ -18,13 +18,9 @@
     "dev": "npm run watch:build",
     "start-healthcheck": "node app/healthcheck.js",
     "browserify": "browserify app/node_modules/client -d -p [minifyify --map bundle.map.json --output app/node_modules/public/js/bundle.map.json] > app/node_modules/public/js/bundle.js",
-    "missing": "dependency-check package.json",
-    "extra": "dependency-check package.json --extra --ignore",
-    "ok": "echo 'OK if the dependencies above are all devDependencies.' && echo 'Clean up any unused dependencies.'",
-    "deps": "npm run missing && npm run extra && npm run ok",
     "audit": "nsp package",
     "precheck": "npm run validate",
-    "check": "npm run audit && npm run deps && npm outdated --depth 0"
+    "check": "npm run audit && npm outdated --depth 0"
   },
   "directories": {
     "test": "test",
