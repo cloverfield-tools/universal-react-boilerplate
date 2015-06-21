@@ -18,6 +18,7 @@
     "dev": "npm run watch:build",
     "start-healthcheck": "node app/healthcheck.js",
     "browserify": "browserify app/node_modules/client -d -p [minifyify --map bundle.map.json --output app/node_modules/public/js/bundle.map.json] > app/node_modules/public/js/bundle.js",
+    "audit": "nsp package",
     "precheck": "npm run validate",
     "check": "npm run audit && npm run deps && npm outdated --depth 0"
   },
@@ -43,6 +44,7 @@
     "faucet": "0.0.1",
     "minifyify": "^7.0.1",
     "node-inspector": "^0.10.2",
+    "nsp": "^1.0.1",
     "selenium-sauce": "^0.3.4",
     "supertest": "^1.0.1",
     "tap-bail": "0.0.0",
