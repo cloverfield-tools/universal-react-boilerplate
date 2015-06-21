@@ -16,8 +16,8 @@ module.exports = function client () {
         var
           body = res.text,
 
-          contains = function (text) {
-            return JSON.stringify(text).indexOf('Hello, world!') !== -1;
+          contains = function (response) {
+            return JSON.stringify(response).indexOf('Hello, world!') !== -1;
           };
 
         assert.error(err, 'Should not return an error.');
