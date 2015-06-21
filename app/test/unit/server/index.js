@@ -6,7 +6,7 @@ var
   app = require('server'),
   arrayIntersect = require('array-intersection');
 
-module.exports = function client() {
+module.exports = function client () {
 
   test('Index page route', function (assert) {
     supertest(app)
@@ -16,8 +16,8 @@ module.exports = function client() {
         var
           body = res.text,
 
-          contains = function (body) {
-            return JSON.stringify(body).indexOf('Hello, world!') !== -1;
+          contains = function (response) {
+            return JSON.stringify(response).indexOf('Hello, world!') !== -1;
           };
 
         assert.error(err, 'Should not return an error.');

@@ -30,18 +30,18 @@ module.exports = new selenium({   // Configuration options
     args: []                // options to pass to `java -jar selenium-server-standalone-X.XX.X.jar`
   }
 },
-function browse(browser) {
+function browse (browser) {
 
   // Initialize the browser
-  browser.init(function(err) {
+  browser.init(function (err) {
     if (err) { throw err; }
 
     // Load a url into the browser
-    browser.url('http://google.com', function get() {
+    browser.url('http://google.com', function get () {
       test('Index page', function (assert) {
 
         // Tell SauceLabs that the test was successful
-        browser.passed(true, function report() {
+        browser.passed(true, function report () {
           assert.pass('tests finished.');
           assert.end();
         });
