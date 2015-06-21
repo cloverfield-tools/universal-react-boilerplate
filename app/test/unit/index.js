@@ -1,8 +1,5 @@
-'use strict';
-
-var
-  server = require('./server'),
-  healthcheck = require('./healthcheck');
+import server from './server';
+import healthcheck from './healthcheck';
 
 server();
 healthcheck();
