@@ -7,12 +7,12 @@ var
   fs = require('fs'),
   root = require('rootrequire');
 
-var 
+var
   pkg = require(root + '/package.json'),
   buildPath = root + '/config/BUILD',
   build = fs.readFileSync(buildPath, 'utf8').trim();
 
-module.exports = function client() {
+module.exports = function client () {
 
   test('Healthcheck server', function (assert) {
     supertest(app)
