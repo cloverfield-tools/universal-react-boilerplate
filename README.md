@@ -1,5 +1,7 @@
 # Universal React Boilerplate
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/learn-javascript-courses/javascript-questions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 A node app that says, "Hello, world!"
 
 This is a universal JavaScript application boilerplate using Express 4.x and React.
