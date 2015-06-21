@@ -10,7 +10,7 @@
     "test": "node app/test/unit/index.js | tap-bail",
     "test-dev": "node app/test/unit/index.js | tap-bail | faucet",
     "functional": "node app/test/functional/index.js",
-    "lint": "jshint .",
+    "lint": "eslint .",
     "build": "mkdir -p config && git rev-parse --short HEAD > config/BUILD && npm run browserify",
     "validate": "npm run lint && npm run build && npm run test && npm run functional && npm outdated --depth 0",
     "validate-dev": "npm run lint && npm run build && npm outdated && npm run test-dev",
@@ -34,17 +34,18 @@
     "version-healthcheck": "^0.1.2"
   },
   "devDependencies": {
-    "minifyify": "^7.0.1",
     "array-intersection": "^0.1.2",
+    "babel-eslint": "^3.1.17",
+    "browserify": "^10.2.4",
+    "eslint": "^0.23.0",
     "faucet": "0.0.1",
-    "jshint": "^2.8.0",
+    "minifyify": "^7.0.1",
     "node-inspector": "^0.10.2",
     "selenium-sauce": "^0.3.4",
     "supertest": "^1.0.1",
     "tap-bail": "0.0.0",
     "tape": "^4.0.0",
-    "watch": "^0.16.0",
-    "browserify": "^10.2.4"
+    "watch": "^0.16.0"
   },
   "repository": {
     "type": "git",
