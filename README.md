@@ -1,4 +1,4 @@
-# Universal React Boilerplate
+# Universal React Boilerplate [![Travis-CI](https://travis-ci.org/ericelliott/universal-react-boilerplate.svg?branch=master)](https://travis-ci.org/ericelliott/universal-react-boilerplate)
 
 [![Dependency Status](https://david-dm.org/ericelliott/universal-react-boilerplate.svg)](https://david-dm.org/ericelliott/universal-react-boilerplate)
 [![devDependency Status](https://david-dm.org/ericelliott/universal-react-boilerplate/dev-status.svg)](https://david-dm.org/ericelliott/universal-react-boilerplate#info=devDependencies)
