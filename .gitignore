@@ -3,5 +3,4 @@ node_modules
 .DS_Store
 config/BUILD
 npm-debug.log
-bundle.js
-bundle.map.json
+app/node_modules/public/js/bundle.*
