@@ -1,4 +1,1 @@
-node_modules
-app/node_modules/public/js/vendor/html5shiv.js
-app/node_modules/public/js/bundle.js
-app/node_modules/public/js/bundle.map.json
+./app/node_modules/public/js/
