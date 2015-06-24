@@ -1,5 +1,8 @@
 # Universal React Boilerplate
 
+[![Dependency Status](https://david-dm.org/ericelliott/universal-react-boilerplate.svg)](https://david-dm.org/ericelliott/universal-react-boilerplate)
+[![devDependency Status](https://david-dm.org/ericelliott/universal-react-boilerplate/dev-status.svg)](https://david-dm.org/ericelliott/universal-react-boilerplate#info=devDependencies)
+
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/learn-javascript-courses/javascript-questions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 A node app that says, "Hello, world!"
