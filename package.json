@@ -44,6 +44,7 @@
     "babel-loader": "^5.1.4",
     "babel-plugin-object-assign": "^1.2.0",
     "babelify": "^6.1.2",
+    "blue-tape": "^0.1.9",
     "eslint": "^0.23.0",
     "eslint-loader": "^0.14.0",
     "faucet": "0.0.1",
@@ -53,7 +54,6 @@
     "selenium-sauce": "^0.3.4",
     "supertest": "^1.0.1",
     "tap-bail": "0.0.0",
-    "tape": "^4.0.0",
     "watch": "^0.16.0",
     "webpack": "^1.9.11"
   },

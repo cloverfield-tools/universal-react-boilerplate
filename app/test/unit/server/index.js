@@ -1,7 +1,7 @@
 'use strict';
 
 var
-  test = require('tape'),
+  test = require('blue-tape'),
   supertest = require('supertest'),
   app = require('server'),
   arrayIntersect = require('array-intersection');
