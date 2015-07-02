@@ -2,7 +2,7 @@
 
 var
   selenium = require('selenium-sauce'),
-  test = require('tape');
+  test = require('blue-tape');
 
 // Loads the config file and invokes the callback once for each browser
 module.exports = new selenium({   // Configuration options
