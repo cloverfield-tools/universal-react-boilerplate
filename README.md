@@ -1,8 +1,8 @@
 # Universal React Boilerplate 
 
-[![Dependency Status](https://david-dm.org/cloverfield/universal-react-boilerplate.svg)](https://david-dm.org/ericelliott/universal-react-boilerplate)
-[![devDependency Status](https://david-dm.org/cloverfield/universal-react-boilerplate/dev-status.svg)](https://david-dm.org/ericelliott/universal-react-boilerplate#info=devDependencies)
-[![Travis-CI](https://travis-ci.org/cloverfield/universal-react-boilerplate.svg?branch=master)](https://travis-ci.org/ericelliott/universal-react-boilerplate)
+[![Dependency Status](https://david-dm.org/cloverfield-tools/universal-react-boilerplate.svg)](https://david-dm.org/ericelliott/universal-react-boilerplate)
+[![devDependency Status](https://david-dm.org/cloverfield-tools/universal-react-boilerplate/dev-status.svg)](https://david-dm.org/ericelliott/universal-react-boilerplate#info=devDependencies)
+[![Travis-CI](https://travis-ci.org/cloverfield-tools/universal-react-boilerplate.svg?branch=master)](https://travis-ci.org/ericelliott/universal-react-boilerplate)
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/learn-javascript-courses/javascript-questions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
