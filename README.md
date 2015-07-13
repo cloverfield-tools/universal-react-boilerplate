@@ -205,9 +205,7 @@ If you find yourself using the same file in a lot of modules, it's probably a be
 * `app/node_modules` for your application-level code that doesn't belong in `npm`. This should contain all your business logic and application secret-sauce. You DO want this in version control. See `.gitignore` to learn how to configure it.
 
 
-Learn JavaScript with Eric Elliott
-==================================
 
-<a href="https://ericelliottjs.com"><img width="1200" alt="eejs-screenshot" src="https://cloud.githubusercontent.com/assets/364727/8640836/76d86618-28c3-11e5-8b6e-27d9cd72180e.png"></a>
+<a href="https://ericelliottjs.com"><img width="1200" alt="Learn JavaScript with Eric Elliott" src="https://cloud.githubusercontent.com/assets/364727/8640836/76d86618-28c3-11e5-8b6e-27d9cd72180e.png"></a>
 
 Created for & Sponsored by "Learn JavaScript with Eric Elliott", an online course series for application builders. Ready to jump in? [Learn more](https://ericelliottjs.com/).
