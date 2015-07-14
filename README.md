@@ -1,8 +1,8 @@
 # Universal React Boilerplate 
 
-[![Dependency Status](https://david-dm.org/cloverfield-tools/universal-react-boilerplate.svg)](https://david-dm.org/ericelliott/universal-react-boilerplate)
-[![devDependency Status](https://david-dm.org/cloverfield-tools/universal-react-boilerplate/dev-status.svg)](https://david-dm.org/ericelliott/universal-react-boilerplate#info=devDependencies)
-[![Travis-CI](https://travis-ci.org/cloverfield-tools/universal-react-boilerplate.svg?branch=master)](https://travis-ci.org/ericelliott/universal-react-boilerplate)
+[![Dependency Status](https://david-dm.org/cloverfield-tools/universal-react-boilerplate.svg)](https://david-dm.org/cloverfield-tools/universal-react-boilerplate)
+[![devDependency Status](https://david-dm.org/cloverfield-tools/universal-react-boilerplate/dev-status.svg)](https://david-dm.org/cloverfield-tools/universal-react-boilerplate#info=devDependencies)
+[![Travis-CI](https://travis-ci.org/cloverfield-tools/universal-react-boilerplate.svg?branch=master)](https://travis-ci.org/cloverfield-tools/universal-react-boilerplate)
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/learn-javascript-courses/javascript-questions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
@@ -43,7 +43,7 @@ There are many advantages to building apps this way, but the primary advantages 
 
 ## Tech stack
 
-Take a look at the [Roadmap](https://github.com/ericelliott/universal-react-boilerplate/issues/4) for an idea of where this is going. Help is welcome and encouraged! =)
+Take a look at the [Roadmap](https://github.com/cloverfield-tools/universal-react-boilerplate/issues/4) for an idea of where this is going. Help is welcome and encouraged! =)
 
 ### Current status
 
