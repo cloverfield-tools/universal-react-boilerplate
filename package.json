@@ -45,6 +45,7 @@
     "babel-plugin-object-assign": "^1.2.0",
     "babelify": "^6.1.2",
     "blue-tape": "^0.1.9",
+    "compression": "^1.5.2",
     "eslint": "^0.23.0",
     "eslint-loader": "^0.14.0",
     "faucet": "0.0.1",
