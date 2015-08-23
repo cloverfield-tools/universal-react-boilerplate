@@ -19,7 +19,7 @@ The Universal React Boilerplate was written for the ["Learn JavaScript with Eric
 
 ### Name Change Underway
 
-This repository began live as the "isomorphic-express-boilerplate". That confused a lot of people, so when Michael Jackson suggested ["Universal JavaScript"](https://medium.com/@mjackson/universal-javascript-4761051b7ae9), I immediately jumped on it. A lot of the issues and documentation still refers to "isomorphic".
+This repository began life as the "isomorphic-express-boilerplate". That confused a lot of people, so when Michael Jackson suggested ["Universal JavaScript"](https://medium.com/@mjackson/universal-javascript-4761051b7ae9), I immediately jumped on it. A lot of the issues and documentation still refers to "isomorphic".
 
 ### ES6 updates coming
 
