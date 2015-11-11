@@ -12,7 +12,7 @@ const buildDir = '/build';
 const staticDir = path.join(settings.APP_HOME, buildDir);
 
 app.use('/static', express.static(staticDir));
-console.log(mainRoute);
+
 app.use('*', mainRoute);
 
 app.listen(port, 'localhost', (err) => {
