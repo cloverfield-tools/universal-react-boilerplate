@@ -150,7 +150,7 @@ This requires the `NODE_PATH` environment variable to be set to `source`. For ex
 ```js
   scripts: {
     "server": "NODE_PATH=source babel-node source/server/index.js",
-    "test": "NODE_PATH=source babel-node ./source/test/index.js",
+    "test": "NODE_PATH=source babel-node source/test/index.js",
   }
 ```
 
