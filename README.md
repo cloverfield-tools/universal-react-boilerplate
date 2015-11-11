@@ -6,9 +6,13 @@
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/learn-javascript-courses/javascript-questions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-A node app that says, "Hello, world!"
+A simple boilerplate Node app featuring:
 
-This is a universal JavaScript application boilerplate using Express 4.x and React.
+* Universal JavaScript
+* Express 4.x
+* React
+* Hot loading dev server
+* Useful scripts and conventions for app development
 
 
 ## Learn JavaScript with Eric Elliott
