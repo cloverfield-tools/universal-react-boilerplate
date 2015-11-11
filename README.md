@@ -11,7 +11,7 @@ A simple boilerplate Node app featuring:
 * Standard ES6 modules using Babel + webpack
 * Universal JavaScript
 * Express 4.x
-* React
+* React + JSX + ES7 object spread via Babel.
 * Hot loading dev server
 * Useful scripts and conventions for app development
 
