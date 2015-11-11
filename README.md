@@ -23,11 +23,14 @@ The Universal React Boilerplate was written for the ["Learn JavaScript with Eric
 
 ### ES6 updates
 
-So we're rewriting from the ground up for ES6 + React with Babel and webpack.
+Rewritten from the ground up for ES6 + React with Babel and webpack.
 
 ### React
 
 We're using an ES6 template string for the page skeleton + React to render the actual UI into the `root` div.
+
+The React render happens on both the server and the client using shared code.
+
 
 ## Universal JavaScript
 
