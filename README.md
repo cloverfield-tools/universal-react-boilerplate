@@ -8,6 +8,7 @@
 
 A simple boilerplate Node app featuring:
 
+* Standard ES6 modules using Babel + webpack
 * Universal JavaScript
 * Express 4.x
 * React
