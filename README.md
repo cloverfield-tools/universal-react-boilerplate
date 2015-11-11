@@ -137,10 +137,10 @@ The dev console does the following:
 
 ## Requiring modules
 
-To require modules relative to the app root, just put them in `source` and require them just like you would require a module installed by npm. For example, if you had a file called `source/routes/index.js` you can require it with:
+To require modules relative to the app root, just put them in `source` and require them just like you would require a module installed by npm. For example, if you had a file called `routes/index.js` you can require it with:
 
 ```
-import routes from 'source/routes';
+import routes from 'routes';
 ```
 
 This is a lot cleaner than using relative paths and littering your code with stuff like `../../../module/path/module.js`.
