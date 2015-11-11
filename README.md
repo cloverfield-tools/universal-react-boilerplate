@@ -29,7 +29,7 @@ Rewritten from the ground up for ES6 + React with Babel and webpack.
 
 We're using an ES6 template string for the page skeleton + React to render the actual UI into the `root` div.
 
-The React render happens on both the server and the client using shared code.
+The React render happens on both the server and the client using shared code. React components are written in class-free style using [pure components](https://github.com/ericelliott/react-pure-component-starter) wherever possible.
 
 
 ## Universal JavaScript
