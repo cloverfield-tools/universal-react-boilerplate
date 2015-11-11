@@ -6,9 +6,14 @@
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/learn-javascript-courses/javascript-questions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-A node app that says, "Hello, world!"
+A simple boilerplate Node app featuring:
 
-This is a universal JavaScript application boilerplate using Express 4.x and React.
+* Standard ES6 modules using Babel + webpack
+* Universal JavaScript
+* Express 4.x
+* React + JSX + ES7 object spread via Babel.
+* Hot loading dev server
+* Useful scripts and conventions for app development
 
 
 ## Learn JavaScript with Eric Elliott
@@ -19,11 +24,14 @@ The Universal React Boilerplate was written for the ["Learn JavaScript with Eric
 
 ### ES6 updates
 
-So we're rewriting from the ground up for ES6 + React with Babel and webpack.
+Rewritten from the ground up for ES6 + React with Babel and webpack.
 
 ### React
 
 We're using an ES6 template string for the page skeleton + React to render the actual UI into the `root` div.
+
+The React render happens on both the server and the client using shared code. React components are written in class-free style using [pure components](https://github.com/ericelliott/react-pure-component-starter) wherever possible.
+
 
 ## Universal JavaScript
 
