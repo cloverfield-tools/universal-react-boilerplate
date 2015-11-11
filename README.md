@@ -17,22 +17,17 @@ The Universal React Boilerplate was written for the ["Learn JavaScript with Eric
 
 ## Status
 
-### Name Change Underway
+### ES6 updates
 
-This repository began life as the "isomorphic-express-boilerplate". That confused a lot of people, so when Michael Jackson suggested ["Universal JavaScript"](https://medium.com/@mjackson/universal-javascript-4761051b7ae9), I immediately jumped on it. A lot of the issues and documentation still refers to "isomorphic".
-
-### ES6 updates coming
-
-ES6 recently became the official standard, and there Babel is a great way to start using it today, so we'll be updating everything in the repo for Babel / ES6!
+So we're rewriting from the ground up for ES6 + React with Babel and webpack.
 
 ### React
 
-Initially we were looking at several different library possibilities, but we settled on React. Now we just need to hook up [react-engine](https://github.com/paypal/react-engine) (by PayPal) to get the universal renders and client bootstrap going.
-
+We're using an ES6 template string for the page skeleton + React to render the actual UI into the `root` div.
 
 ## Universal JavaScript
 
-Universal (aka *"isomorphic"*) means that it's designed to run a lot of the same code on both the client and the server. Typically that includes a lot of rendering and domain logic.
+Universal JavaScript (aka *"isomorphic JavaScript"*) means that it's designed to run a lot of the same code on both the client and the server. Typically that includes a lot of rendering and domain logic.
 
 There are many advantages to building apps this way, but the primary advantages are:
 
@@ -45,11 +40,13 @@ There are many advantages to building apps this way, but the primary advantages 
 
 Take a look at the [Roadmap](https://github.com/cloverfield-tools/universal-react-boilerplate/issues/4) for an idea of where this is going. Help is welcome and encouraged! =)
 
+The universal boilerplate uses standard JavaScript modules to author all of the code. All open-source modules are sourced from `npm`.
+
+
 ### Current status
 
-This is already very valuable as-is. Read on for details.
+Exploratory / not production tested.
 
-The universal boilerplate uses standard JavaScript modules to author all of the code. All open-source modules are sourced from `npm`.
 
 **Why not use Bower and AMD?** Lots of reasons:
 
@@ -72,74 +69,28 @@ In my experience, every team is always behind schedule if you ask them to do wor
 
 ## What's inside?
 
-There are some concerns that legitimately belong only on the server, or only on the client, so there are `client/` and `server/` directories for code that is specific to one or the other. Shared code goes in `lib/`:
+There are some concerns that legitimately belong only on the server, or only on the client, so there are `client/` and `server/` directories for code that is specific to one or the other. Shared code goes in `shared/`:
 
-* `app/node_modules/lib`    - Shared code.
-* `app/node_modules/client` - For browser-only code.
-* `app/node_modules/server` - For server-only code.
-
-```
-.
-├── LICENSE
-├── README.md
-├── app
-│   ├── index.js
-│   ├── node_modules
-│   │   ├── client
-│   │   │   └── index.js
-│   │   ├── lib
-│   │   │   └── app.js
-│   │   ├── public
-│   │   │   ├── index.html
-│   │   │   └── js
-│   │   │       └── vendor
-│   │   │           └── html5shiv.js
-│   │   └── server
-│   │       └── index.js
-│   └── test
-│       ├── functional
-│       │   ├── acceptance
-│       │   │   └── index.js
-│       │   ├── index.js
-│       │   └── smoke
-│       │       └── index.js
-│       └── unit
-│           ├── client
-│           │   └── index.js
-│           ├── index.js
-│           └── server
-│               └── index.js
-├── config
-│   └── BUILD
-├── node_modules
-└── package.json
-```
+* `source/shared`    - Shared code.
+* `source/client` - For browser-only code.
+* `source/server` - For server-only code.
 
 
 ## Index
 
-The index route `/` serves `index.html` from the `public` folder using `express.static`. The index file is a slightly modified version of the [HTML5 Boilerplate](https://html5boilerplate.com/) trusted by Google, Microsoft, NASA, Nike, Barack Obama, etc... To customize it or create your own, visit [Initializr.com](http://initializr.com).
+The `server/index` route serves dynamic content. Static assets are served from the `build` folder using `express.static`.
 
 
 ## Scripts
 
-Some of these scripts may require a Unix/Linux environment. OS X and Linux come with appropriate terminals ready to roll. On Windows, you'll need git installed, which comes with Git Bash. That should work. If you have any trouble, please [report the issue]().
+Some of these scripts may require a Unix/Linux environment. OS X and Linux come with appropriate terminals ready to roll. On Windows, you'll need git installed, which comes with Git Bash. That should work. If you have any trouble, please [report the issue](https://github.com/cloverfield-tools/universal-react-boilerplate/issues/new).
 
 The `package.json` file comes with the following scripts that you may find useful:
 
-```
-  "scripts": {
-    "start": "node index.js",
-    "debug": "node --debug index.js",
-    "inspect": "node-inspector",
-    "test": "node test/unit/index.js | faucet",
-    "lint": "jshint .",
-    "build": "mkdir -p config && git rev-parse --short HEAD > config/BUILD",
-    "watch:build": "watch --wait=5 'npm run lint && npm run build && npm run test' .",
-    "dev": "npm run watch:build"
-  }
-```
-
+* `npm start` runs a client-only devserver with hot loading
+* `npm run build` rebuilds the client
+* `npm run watch` runs a dev console that reports lint and unit test errors on save
+* `npm run server` runs the actual server process
 
 To run a script, open the terminal, navigate to the boilerplate directory, and type:
 
@@ -150,46 +101,58 @@ npm run <name of script>
 
 ### Start
 
-Start the app.
+Start the dev server.
+
+You can optionally leave `run` out of the `start` and `test` script invocations, so these are equivalent:
 
 ```
 npm run start
-```
-
-`start` and `test` support this shortcut, to save a few keystrokes:
-
-```
 npm start
 ```
 
+## 
 Log messages will be written to the console (stdout) in JSON format for convenient queries using tools like [Splunk](http://www.splunk.com/). You should be able to pipe the output to a third party logging service for aggregation without including that log aggregation logic in the app itself.
 
 
 ### Developer feedback console:
 
 ```
-npm run dev
+npm run watch
 ```
-
 
 The dev console does the following:
 
-* Checks for syntax errors with `jslint` using idiomatic settings from `.jshintrc`
-* Runs a build script which (for now) simply writes the current git commit hash to a file called `config/BUILD`. In a later version, this will also bundle the browser JavaScript.
+* Checks for syntax errors with `eslint` using idiomatic settings from `.eslintrc`
 * Runs the unit tests and reports any test failures.
 * Watches for file changes and re-runs the whole process.
 
 
 ## Requiring modules
 
-To require modules relative to the app root, just put them in `app/node_modules` and require them just like you would require a module installed by npm. For example, if you had a file called `app/node_modules/lib/routes.js` you can require it with:
+To require modules relative to the app root, just put them in `source` and require them just like you would require a module installed by npm. For example, if you had a file called `source/routes/index.js` you can require it with:
 
 ```
-var routes = require('lib/routes`);
+import routes from 'source/routes';
 ```
 
-The reason this works is because Node will traverse the parent directories until it finds the `node_modules` directory and use that as the base path for requires. See the [full explanation on StackOverflow](http://stackoverflow.com/questions/10860244/how-to-make-the-require-in-node-js-to-be-always-relative-to-the-root-folder-of-t#answer-24461606).
+This is a lot cleaner than using relative paths and littering your code with stuff like `../../../module/path/module.js`.
 
+This requires the `NODE_PATH` environment variable to be set to `source`. For example from the `package.json`:
+
+```js
+  scripts: {
+    "server": "NODE_PATH=source babel-node source/server/index.js",
+    "test": "NODE_PATH=source babel-node ./source/test/index.js",
+  }
+```
+
+We also need to tell webpack configs (located in the project root) about the source path:
+
+```js
+  resolve: {
+    root: __dirname + '/source'
+  }
+```
 
 ### Why?
 
@@ -198,12 +161,6 @@ The reason this works is because Node will traverse the parent directories until
 * Dazzle your coworkers.
 
 If you find yourself using the same file in a lot of modules, it's probably a better idea to split it out into its own module -- preferably open source. Then you can just install it like any other module so it can live in `node_modules`.
-
-### Recap
-
-* `node_modules` for modules installed by `npm`. That way you won't have to put up with a bunch of vendor noise in version control and pull requests. Just add `node_modules` to your .gitignore file (like it is in this repo).
-* `app/node_modules` for your application-level code that doesn't belong in `npm`. This should contain all your business logic and application secret-sauce. You DO want this in version control. See `.gitignore` to learn how to configure it.
-
 
 
 <a href="https://ericelliottjs.com"><img width="1200" alt="Learn JavaScript with Eric Elliott" src="https://cloud.githubusercontent.com/assets/364727/8640836/76d86618-28c3-11e5-8b6e-27d9cd72180e.png"></a>
