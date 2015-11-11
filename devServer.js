@@ -1,10 +1,12 @@
-var path = require('path');
-var express = require('express');
-var webpack = require('webpack');
-var config = require('./webpack.config.dev');
+import path from 'path';
+import express from 'express';
+import webpack from 'webpack';
+import config from './webpack.config.dev';
 
-var app = express();
-var compiler = webpack(config);
+import mainRoute from 'server/routes/main';
+
+const app = express();
+const compiler = webpack(config);
 
 app.use(require('webpack-dev-middleware')(compiler, {
   noInfo: true,
@@ -13,11 +15,9 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
-app.get('*', function(req, res) {
-  res.sendFile(path.join(__dirname, 'static/index.html'));
-});
+app.get('/', mainRoute);
 
-app.listen(3000, 'localhost', function(err) {
+app.listen(3000, 'localhost', (err) => {
   if (err) {
     console.log(err);
     return;
