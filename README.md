@@ -59,7 +59,7 @@ Exploratory / not production tested.
 **Why not use Bower and AMD?** Lots of reasons:
 
 * `npm` has 5x more modules than Bower, 60% of which are browser compatible, and `npm` is growing faster than Bower. In fact, `npm` is the largest package repository available for any programming language.
-* Browserify lets you bundle Node style modules for the browser. It handles dependencies in a way that is compatible with the way that Node does.
+* Webpack and browserify let you bundle standard ES6 style modules for the browser.
 * Typical Node applications are not written using AMD modules or Bower, so sharing code becomes more complicated when you author with AMD.
 * Bower modules frequently assume they're running in a browser environment and do things that don't make any sense in the server environment.
 * Typical AMD apps default to asynchronously loading all the modules. That's bad for performance. See below.
