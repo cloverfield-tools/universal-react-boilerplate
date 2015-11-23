@@ -1,23 +1,30 @@
-import settings from 'server/settings';
+import React from 'react';
+
+import { match, Route, RoutingContext } from 'react-router';
+
+import { renderToString } from 'react-dom/server';
 
 import render from './render.js';
 import renderLayout from './render-layout.js';
 
-const title = settings.TITLE;
+import TestPage from '../../../shared/components/TestPage';
 
-const props = {
-  title
-};
-
-const rootMarkup = render(props);
-
-// This will be rendered into the HTML to pass data to the client.
-const payload = `
-  var payload = {
-    title: '${ props.title }'
-  };
-`;
+const routes = (
+  <Route path="/" component={TestPage}>
+    <Route path="/test" component={TestPage}/>
+  </Route>
+);
 
 export default (req, res) => {
-  res.send(renderLayout({ title, rootMarkup, payload}));
+  match({ routes, location: req.url }, (error, redirectLocation, renderProps) => {
+    if (error) {
+      res.status(500).send(error.message);
+    } else if (redirectLocation) {
+      res.redirect(302, redirectLocation.pathname + redirectLocation.search);
+    } else if (renderProps) {
+      res.status(200).send(renderToString(<RoutingContext { ...renderProps } />));
+    } else {
+      res.status(404).send('Not found');
+    }
+  });
 };

@@ -1,13 +1,12 @@
-export default ({title, rootMarkup, payload}) => {
+export default ({ rootMarkup }) => {
   return `
     <!doctype html>
     <html>
       <head>
-        <title>${ title }</title>
+        <title>React App Test</title>
       </head>
       <body>
         <div id='root'>${ rootMarkup }</div>
-        <script>${ payload }</script>
         <script src="/static/index.js"></script>
       </body>
     </html>

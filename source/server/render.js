@@ -1,14 +1,12 @@
 import React from 'react';
 import reactDom from 'react-dom/server';
-import createApp from 'shared/components/app';
+import { RoutingContext } from 'react-router';
 
-const render = reactDom.renderToStaticMarkup;
-
-const App = createApp(React);
+const render = reactDom.renderToString;
 
 const createDOM = (props) => {
   return render(
-    <App { ...props }></App>
+    <RoutingContext { ...props } />
   );
 };
 
