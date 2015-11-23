@@ -17,13 +17,29 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
   ],
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: ['babel'],
-      include: path.join(__dirname, 'source')
+      include: path.join(__dirname, 'source'),
+      loader: 'babel',
+      query: {
+        stage: 0,
+          plugins: ['react-transform'],
+          extra: {
+            'react-transform': {
+              'transforms': [{
+                'transform': 'react-transform-hmr',
+                'imports': ['react'],
+                'locals': ['module']
+              }, {
+                'transform': 'react-transform-catch-errors',
+                'imports': ['react', 'redbox-react']
+              }]
+            }
+          }
+        }
     }]
   }
 };

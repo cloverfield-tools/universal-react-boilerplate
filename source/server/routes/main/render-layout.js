@@ -1,9 +1,9 @@
-export default ({ rootMarkup }) => {
+export default (rootMarkup) => {
   return `
     <!doctype html>
     <html>
       <head>
-        <title>React App Test</title>
+        <title>React App</title>
       </head>
       <body>
         <div id='root'>${ rootMarkup }</div>
