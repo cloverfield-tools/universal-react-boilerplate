@@ -3,9 +3,13 @@ import reactDom from 'react-dom/server';
 import { RoutingContext } from 'react-router';
 
 import { Provider } from 'react-redux';
-import store from '../shared/configureStore';
+import configureStore from 'shared/configureStore';
 
 const render = reactDom.renderToString;
+
+const store = configureStore(window.__INITIAL_STATE__);
+
+store.subscribe(() => console.log(store.getState()));
 
 const createDOM = renderProps => {
   return render(

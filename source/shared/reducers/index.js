@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-const initialItems = [
+const initialState = [
   { text: 'Book 1', count: 2 },
   { text: 'Book 2', count: 3 },
   { text: 'Book 3', count: 4 },
@@ -8,7 +8,7 @@ const initialItems = [
 
 // Combine reducers
 const books = (state = {
-  items: initialItems,
+  items: initialState,
 }, action) => {
   switch (action.type) {
     case 'ADD_COUNT':

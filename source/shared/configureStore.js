@@ -5,12 +5,10 @@ import rootReducer from './reducers';
 
 const loggerMiddleware = createLogger();
 
-const store = compose(
+const configureStore = (initialState = {}) => {
+  return compose(
     applyMiddleware(thunkMiddleware, loggerMiddleware),
-)(createStore)(rootReducer, {});
+  )(createStore)(rootReducer, initialState);
+};
 
-store.subscribe(() =>
-  console.log(store.getState())
-);
-
-export default store;
+export default configureStore;
