@@ -17,9 +17,7 @@ export default (req, res) => {
     } else if (redirectLocation) {
       res.redirect(302, redirectLocation.pathname + redirectLocation.search);
     } else if (renderProps) {
-      //syncReduxAndRouter(renderProps.history, store);
       const rootMarkup = render(renderProps, store);
-
       res.status(200).send(renderLayout({ settings, rootMarkup, initialState }));
     } else {
       res.status(404).send('Not found');
