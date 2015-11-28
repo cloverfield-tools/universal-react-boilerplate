@@ -1,25 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 
-class App extends Component {
-  addReader (book) {
-    console.log('test');
-    console.log(book);
-    // this.props.dispatch({
-    //   type: 'ADD_COUNT',
-    //   book,
-    // });
-  }
+const App = ({ dispatch, books }) => {
+  const bookNodes = books.items.map(book => {
+    return (
+      <div key={ book.id }>
+        { book.text } - Read by { book.count } people.
+        <button onClick={ () => dispatch({ type: 'ADD_COUNT', book }) }>Add reader</button>
+      </div>
+    );
+  });
 
-  render () {
-    return <button onClick={this.addReader.bind(this)}>Test</button>;
-    // const bookNodes = this.props.books.items.map(item => {
-    //   return <div>{ item.text } - Read by { item.count } people. <button onClick={this.addReader.bind(this)}>Add reader</button></div>;
-    // }  );
-    //
-    // return <div>{ bookNodes }</div>;
-  }
-}
+  return <div>{ bookNodes }</div>;
+};
 
 function mapStateToProps (state) {
   const { books } = state;
