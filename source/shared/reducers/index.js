@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+import { routeReducer } from 'redux-simple-router';
 
 const initialState = [
   { text: 'Book 1', count: 2 },
@@ -19,6 +20,7 @@ const books = (state = {
 };
 
 const rootReducer = combineReducers({
+  routing: routeReducer,
   books,
 });
 

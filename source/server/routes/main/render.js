@@ -1,7 +1,6 @@
 import React from 'react';
 import reactDom from 'react-dom/server';
 import { RoutingContext } from 'react-router';
-
 import { Provider } from 'react-redux';
 
 const render = reactDom.renderToString;
