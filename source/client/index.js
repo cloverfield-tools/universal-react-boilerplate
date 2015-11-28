@@ -7,7 +7,7 @@ import configureStore from 'shared/configureStore';
 
 const render = reactDom.renderToString;
 
-const store = configureStore(window.__INITIAL_STATE__);
+const store = configureStore(window.BOOTSTRAP_CLIENT_STATE);
 
 store.subscribe(() => console.log(store.getState()));
 

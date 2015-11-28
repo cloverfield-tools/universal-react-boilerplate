@@ -1,9 +1,9 @@
 import { match } from 'react-router';
-import routes from '../../../shared/routes';
+import routes from 'shared/routes';
 
 import renderLayout from './render-layout';
 import render from './render';
-import settings from '../../settings';
+import settings from 'server/settings';
 
 import configureStore from '../../../shared/configureStore';
 

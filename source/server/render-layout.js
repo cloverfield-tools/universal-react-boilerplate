@@ -8,7 +8,7 @@ export default ({ settings, rootMarkup, initialState }) => {
       <body>
         <div id='root'>${ rootMarkup }</div>
         <script>
-          window.__INITIAL_STATE__ = ${JSON.stringify(initialState)}
+          window.BOOTSTRAP_CLIENT_STATE = ${JSON.stringify(initialState)}
         </script>
         <script src="/static/index.js"></script>
       </body>
