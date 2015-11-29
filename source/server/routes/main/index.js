@@ -1,13 +1,15 @@
+import React from 'react';
 import { match } from 'react-router';
-import routes from 'shared/routes';
 
 import renderLayout from './render-layout';
 import render from './render';
 import settings from 'server/settings';
 
-import configureStore from '../../../shared/configureStore';
+import configureStore from 'shared/configureStore';
+import createRoutes from 'shared/routes';
 
 const store = configureStore();
+const routes = createRoutes(React);
 const initialState = store.getState();
 
 export default (req, res) => {

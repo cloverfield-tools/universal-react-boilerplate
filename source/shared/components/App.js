@@ -1,10 +1,11 @@
-import React from 'react';
 import { connect } from 'react-redux';
 
 import settings from 'server/settings';
-import Title from './Title';
+import createTitle from './Title';
 
-const App = ({ dispatch, books }) => {
+const App = React => ({ dispatch, books }) => {
+  const Title = createTitle(React);
+
   const bookNodes = books.items.map(book => {
     return (
       <div key={ book.id }>
