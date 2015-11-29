@@ -3,9 +3,8 @@ import reactDom from 'react-dom/server';
 import test from 'tape';
 import dom from 'cheerio';
 
-import createTitle from 'shared/components/title';
+import Title from 'shared/components/Title';
 
-const Title = createTitle(React);
 const render = reactDom.renderToStaticMarkup;
 
 test('Title', assert => {

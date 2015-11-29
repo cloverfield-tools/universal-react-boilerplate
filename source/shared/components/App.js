@@ -1,6 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+import settings from 'server/settings';
+import Title from './Title';
+
 const App = ({ dispatch, books }) => {
   const bookNodes = books.items.map(book => {
     return (
@@ -11,7 +14,12 @@ const App = ({ dispatch, books }) => {
     );
   });
 
-  return <div>{ bookNodes }</div>;
+  return (
+    <div>
+      <Title title={settings.TITLE} />
+      { bookNodes }
+    </div>
+  );
 };
 
 function mapStateToProps (state) {
