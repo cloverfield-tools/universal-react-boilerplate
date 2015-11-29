@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route } from 'react-router';
-import App from './components/App';
+import createApp from './components/App';
 
-const routes = (
+const App = createApp(React);
+
+export default (
     <Route path="/" component={App} />
 );
-
-export default routes;
