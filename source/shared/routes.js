@@ -1,9 +1,10 @@
-import React from 'react';
 import { Route } from 'react-router';
 import createApp from './components/App';
 
-const App = createApp(React);
+export default React => {
+  const App = createApp(React);
 
-export default (
+  return (
     <Route path="/" component={App} />
-);
+  );
+};
