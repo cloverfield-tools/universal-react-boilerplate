@@ -44,6 +44,7 @@
     "eslint-plugin-react": "3.11.2",
     "express": "4.13.3",
     "rimraf": "2.4.4",
+    "tap-xunit": "^1.2.1",
     "tape": "4.2.2",
     "watch": "0.16.0",
     "webpack": "1.12.9",
