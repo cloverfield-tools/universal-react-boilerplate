@@ -19,7 +19,7 @@ export default (req, res) => {
     } else if (redirectLocation) {
       res.redirect(302, redirectLocation.pathname + redirectLocation.search);
     } else if (renderProps) {
-      const rootMarkup = render(renderProps, store);
+      const rootMarkup = render(React)(renderProps, store);
       res.status(200).send(renderLayout({ settings, rootMarkup, initialState }));
     } else {
       res.status(404).send('Not found');

@@ -9,7 +9,7 @@ const createApp = React => ({ dispatch, books }) => {
     return (
       <div key={ book.id }>
         { book.text } - Read by { book.count } people.
-        <button onClick={ () => console.log('test') }>Add reader</button>
+        <button onClick={ () => dispatch({ type: 'ADD_COUNT', item: book }) }>Add reader</button>
       </div>
     );
   });

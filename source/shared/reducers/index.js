@@ -13,7 +13,17 @@ const books = (state = {
 }, action) => {
   switch (action.type) {
     case 'ADD_COUNT':
-      return action.item.count++;
+      const newItems = state.items.map(item => {
+        if (item.id === action.item.id) {
+          item.count++;
+        }
+
+        return item;
+      });
+
+      return Object.assign({}, state.items, {
+        items: newItems,
+      });
     default:
     return state;
   }
