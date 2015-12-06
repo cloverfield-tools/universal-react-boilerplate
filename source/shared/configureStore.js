@@ -7,7 +7,7 @@ const loggerMiddleware = createLogger();
 
 const configureStore = (initialState = {}) => {
   return compose(
-    applyMiddleware(thunkMiddleware, loggerMiddleware),
+    applyMiddleware(thunkMiddleware, loggerMiddleware)
   )(createStore)(rootReducer, initialState);
 };
 
