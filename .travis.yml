@@ -2,6 +2,7 @@ language: node_js
 node_js:
   - 4
 install:
+  - npm install npm
   - npm install
 script:
   - npm run check
