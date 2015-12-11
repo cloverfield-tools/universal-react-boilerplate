@@ -11,7 +11,8 @@
     "test": "NODE_PATH=source babel-node source/test/index.js",
     "lint": "eslint source",
     "watch": "watch 'clear && npm run lint -s && npm run test -s' source",
-    "check": "npm run lint && npm run test && npm outdated --depth=0"
+    "check": "npm run lint && npm run test && npm outdated --depth=0",
+    "update": "updtr"
   },
   "keywords": [
     "react",
@@ -46,6 +47,7 @@
     "rimraf": "2.4.4",
     "tap-xunit": "1.2.1",
     "tape": "4.2.2",
+    "updtr": "0.1.6",
     "watch": "0.16.0",
     "webpack": "1.12.9",
     "webpack-dev-middleware": "1.4.0",
