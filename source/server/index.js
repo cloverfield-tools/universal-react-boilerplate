@@ -15,7 +15,7 @@ app.use('/static', express.static(staticDir));
 
 app.use('*', mainRoute);
 
-app.listen(port, 'localhost', (err) => {
+app.listen(port, (err) => {
   if (err) {
     console.log(err);
     return;
