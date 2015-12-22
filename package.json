@@ -14,6 +14,13 @@
     "check": "npm run lint && npm run test && npm outdated --depth=0",
     "update": "updtr"
   },
+  "engines": {
+    "node": "^5.0.0"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
   "keywords": [
     "react",
     "reactjs",
