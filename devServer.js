@@ -6,6 +6,8 @@ import mainRoute from 'server/routes/main';
 
 const app = express();
 const compiler = webpack(config);
+const NODE_PORT = process.env.NODE_PORT || 3000;
+const NODE_HOST = process.env.NODE_HOST || '0.0.0.0';
 
 app.use(require('webpack-dev-middleware')(compiler, {
   noInfo: true,
@@ -16,11 +18,6 @@ app.use(require('webpack-hot-middleware')(compiler));
 
 app.get('/', mainRoute);
 
-app.listen(3000, 'localhost', (err) => {
-  if (err) {
-    console.log(err);
-    return;
-  }
-
-  console.log('Listening at http://localhost:3000');
-});
+app.listen(NODE_PORT, NODE_HOST, (err) => err ?
+  console.error(err) :
+  console.log(`Listening at http://${NODE_HOST}:${NODE_PORT}`));
