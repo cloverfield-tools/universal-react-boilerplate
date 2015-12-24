@@ -1,7 +1,0 @@
-{
-  "extends": "../.eslintrc",
-
-  "rules": {
-    "strict": [2, "never"]
-  }
-}
