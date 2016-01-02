@@ -9,7 +9,7 @@
     "start": "NODE_PATH=source babel-node devServer.js",
     "server": "NODE_PATH=source babel-node source/server/index.js",
     "test": "NODE_PATH=source babel-node source/test/index.js",
-    "lint": "eslint source",
+    "lint": "eslint --cache .",
     "watch": "watch 'clear && npm run lint -s && npm run test -s' source",
     "check": "npm run lint && npm run test && npm outdated --depth=0",
     "update": "updtr"
