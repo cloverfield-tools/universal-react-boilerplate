@@ -1,10 +1,28 @@
 {
   "presets": [
     "es2015",
+    "stage-2",
     "react"
   ],
-  "plugins": [
-    "transform-es2015-modules-commonjs",
-    "transform-object-rest-spread"
-  ]
+  "env": {
+    "development": {
+      "plugins": [
+        [
+          "react-transform",
+          {
+            "transforms": [
+              {
+                "transform": "react-transform-hmr",
+                "imports": ["react"],
+                "locals": ["module"]
+              }, {
+                "transform": "react-transform-catch-errors",
+                "imports": ["react", "redbox-react"]
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  }
 }
