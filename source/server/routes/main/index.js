@@ -1,8 +1,8 @@
 import React from 'react';
 import { match } from 'react-router';
 
-import renderLayout from './render-layout';
-import render from './render';
+import renderLayout from 'server/render-layout';
+import render from 'server/render';
 import settings from 'server/settings';
 
 import configureStore from 'shared/configureStore';
