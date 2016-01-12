@@ -7,8 +7,6 @@ import configureStore from 'shared/configureStore';
 
 const store = configureStore(window.BOOTSTRAP_CLIENT_STATE);
 
-store.subscribe(() => console.log(store.getState()));
-
 const App = createApp(React);
 
 ReactDOM.render(
