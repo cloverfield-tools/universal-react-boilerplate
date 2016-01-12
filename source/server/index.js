@@ -2,7 +2,7 @@ import path from 'path';
 import express from 'express';
 import settings from 'server/settings';
 
-import mainRoute from './routes/main';
+import mainRoute from 'server/routes/main';
 
 const app = express();
 
