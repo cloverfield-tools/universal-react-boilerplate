@@ -1,5 +1,5 @@
 import { Route } from 'react-router';
-import createApp from './components/App';
+import createApp from 'shared/components/app';
 
 export default React => {
   const App = createApp(React);

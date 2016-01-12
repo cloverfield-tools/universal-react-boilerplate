@@ -3,7 +3,7 @@ import reactDom from 'react-dom/server';
 import test from 'tape';
 import dom from 'cheerio';
 
-import createTitle from 'shared/components/Title';
+import createTitle from 'shared/components/title';
 
 const Title = createTitle(React);
 const render = reactDom.renderToStaticMarkup;
