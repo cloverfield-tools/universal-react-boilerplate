@@ -1,9 +1,10 @@
-import { createStore, compose, applyMiddleware } from 'redux';
+import { createStore, compose, applyMiddleware, combineReducers } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import createLogger from 'redux-logger';
-import rootReducer from 'shared/reducers';
+import reducers from 'shared/reducers';
 
 const logger = createLogger();
+const rootReducer = combineReducers(reducers);
 
 const configureStore = (initialState = {}) => {
   return compose(
