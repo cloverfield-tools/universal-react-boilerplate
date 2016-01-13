@@ -1,1 +1,2 @@
-import './title';
+import 'test/title';
+import 'test/functional';

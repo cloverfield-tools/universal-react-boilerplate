@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import createApp from 'shared/components/App';
+import createRoutes from 'shared/routes';
 import { Provider } from 'react-redux';
-import configureStore from 'shared/configureStore';
+import configureStore from 'shared/configure-store';
 
 const store = configureStore(window.BOOTSTRAP_CLIENT_STATE);
 
-const App = createApp(React);
+const Routes = createRoutes(React);
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Routes />
   </Provider>,
   document.getElementById('root')
 );
