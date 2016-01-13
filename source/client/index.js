@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import createApp from '../shared/components/App';
+import createApp from 'shared/components/App';
 import { Provider } from 'react-redux';
 import configureStore from 'shared/configureStore';
 
