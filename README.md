@@ -134,6 +134,14 @@ The dev console does the following:
 * Runs the unit tests and reports any test failures.
 * Watches for file changes and re-runs the whole process.
 
+## Running the demo
+
+```
+npm install
+npm start
+```
+
+Now the app should be running at http://0.0.0.0:3000/
 
 ## Requiring modules
 
