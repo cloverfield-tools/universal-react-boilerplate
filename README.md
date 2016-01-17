@@ -32,6 +32,14 @@ We're using an ES6 template string for the page skeleton + React to render the a
 
 The React render happens on both the server and the client using shared code. React components are written in class-free style using [pure components](https://github.com/ericelliott/react-pure-component-starter) wherever possible.
 
+## Getting Started
+
+```
+npm install
+npm start
+```
+
+Now the app should be running at http://0.0.0.0:3000/
 
 ## Universal JavaScript
 
@@ -133,15 +141,6 @@ The dev console does the following:
 * Checks for syntax errors with `eslint` using idiomatic settings from `.eslintrc`
 * Runs the unit tests and reports any test failures.
 * Watches for file changes and re-runs the whole process.
-
-## Running the demo
-
-```
-npm install
-npm start
-```
-
-Now the app should be running at http://0.0.0.0:3000/
 
 ## Requiring modules
 
