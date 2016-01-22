@@ -29,11 +29,17 @@ Rewritten from the ground up for ES6 + React with Babel and webpack.
 
 ### React
 
+Useful to get a working starting point. Still exploratory and evolving. Needs production hardening. If you use this in a production app, please contribute your production tweaks back so we can all benefit.
+
+Our next big challenge is to encapsulate universal route, render, and store config into its own library module, which would radically simplify the process of building your apps using this boilerplate.
+
+
+## Getting Started
+
 We're using an ES6 template string for the page skeleton + React to render the actual UI into the `root` div.
 
 The React render happens on both the server and the client using shared code. React components are written in class-free style using [pure components](https://github.com/ericelliott/react-pure-component-starter) wherever possible.
 
-## Getting Started
 
 ```
 npm install
@@ -58,11 +64,6 @@ There are many advantages to building apps this way, but the primary advantages 
 Take a look at the [Roadmap](https://github.com/cloverfield-tools/universal-react-boilerplate/issues/4) for an idea of where this is going. Help is welcome and encouraged! =)
 
 The universal boilerplate uses standard JavaScript modules to author all of the code. All open-source modules are sourced from `npm`.
-
-
-### Current status
-
-Exploratory / not production tested.
 
 
 **Why not use Bower and AMD?** Lots of reasons:
