@@ -8,12 +8,13 @@
 
 A simple boilerplate Node app featuring:
 
-* Standard ES6 modules using Babel + webpack
-* Universal JavaScript
-* Express 4.x
+* Universal JavaScript. *Routing & Rendering with shared components, shared store, & shared routes.*
+* State managed by Redux.
+* Standard ES6 modules using Babel + webpack.
 * React + JSX + ES7 object spread via Babel.
-* Hot loading dev server
-* Useful scripts and conventions for app development
+* Express 4.x.
+* Hot loading dev server.
+* Useful scripts and conventions for app development.
 
 
 ## Learn JavaScript with Eric Elliott
