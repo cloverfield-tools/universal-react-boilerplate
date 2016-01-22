@@ -68,16 +68,16 @@
     "webpack-hot-middleware": "2.6.0"
   },
   "dependencies": {
+    "express": "4.13.3",
+    "history": "1.14.0",
     "react": "0.14.5",
-    "react-dom": "0.14.5",
-    "history": "^1.13.1",
-    "react-redux": "^4.0.0",
-    "react-router": "1.0.1",
-    "redux": "^3.0.4",
-    "redux-logger": "^2.0.4",
-    "redux-simple-router": "0.0.10",
-    "redux-thunk": "^1.0.0",
-    "express": "4.13.3"
+    "react-dom": "0.14.2",
+    "react-redux": "4.0.0",
+    "react-router": "1.0.0",
+    "redux": "3.0.4",
+    "redux-logger": "2.0.4",
+    "redux-simple-router": "2.0.3",
+    "redux-thunk": "1.0.0"
   },
   "license": "MIT",
   "bugs": {

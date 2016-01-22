@@ -1,17 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import { Router, Route, browserHistory } from 'react-router';
+import { syncHistory, routeReducer } from 'redux-simple-router';
+import reducers from 'shared/reducers';
 
 import createRoutes from 'shared/routes';
-import { Provider } from 'react-redux';
-import configureStore from 'shared/configure-store';
-
-const store = configureStore(window.BOOTSTRAP_CLIENT_STATE);
 
 const Routes = createRoutes(React);
 
+const reducer = combineReducers(Object.assign({}, reducers, {
+  routing: routeReducer
+}));
+
+// Sync dispatched route actions to the history
+const reduxRouterMiddleware = syncHistory(browserHistory);
+const createStoreWithMiddleware =
+  applyMiddleware(reduxRouterMiddleware)(createStore);
+
+const store = createStoreWithMiddleware(reducer);
+
+// Required for replaying actions from devtools to work
+// reduxRouterMiddleware.listenForReplays(store)
+
 ReactDOM.render(
   <Provider store={store}>
-    <Routes />
+    <Router history={browserHistory}>
+      <Routes />
+    </Router>
   </Provider>,
   document.getElementById('root')
 );
