@@ -1,6 +1,6 @@
 {
   "name": "universal-react-boilerplate",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "A new Webpack boilerplate with hot reloading React components, and error handling on module and component level.",
   "scripts": {
     "clean": "rimraf build",
