@@ -1,5 +1,3 @@
-import { routeReducer } from 'redux-simple-router';
-
 const initialState = [
   { id: 1, text: 'Book 1', count: 2 },
   { id: 2, text: 'Book 2', count: 3 },
@@ -28,8 +26,7 @@ const books = (state = {
 };
 
 const reducers = {
-  routing: routeReducer,
-  books,
+  books
 };
 
 export default reducers;

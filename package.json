@@ -69,11 +69,10 @@
   },
   "dependencies": {
     "express": "4.13.3",
-    "history": "1.14.0",
     "react": "0.14.5",
     "react-dom": "0.14.2",
     "react-redux": "4.0.0",
-    "react-router": "1.0.0",
+    "react-router": "2.0.0-rc5",
     "redux": "3.0.4",
     "redux-logger": "2.0.4",
     "redux-simple-router": "2.0.3",
