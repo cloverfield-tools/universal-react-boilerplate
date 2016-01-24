@@ -9,7 +9,7 @@
     "build": "npm run clean && npm run build:webpack",
     "build:dev": "npm run clean && npm run build:webpack:dev",
     "start": "cross-env NODE_PATH=source babel-node devServer.js",
-    "server": "cross-env NODE_PATH=source babel-node source/server/index.js",
+    "server": "cross-env NODE_PATH=source babel-node source/server/server.js",
     "test": "cross-env NODE_PATH=source babel-node source/test/index.js",
     "lint": "eslint --cache .",
     "watch": "watch \"clear && npm run lint -s && npm run test -s\" source",
