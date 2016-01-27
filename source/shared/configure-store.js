@@ -1,7 +1,7 @@
 import { createStore, compose, applyMiddleware, combineReducers } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import createLogger from 'redux-logger';
-import { routeReducer } from 'redux-simple-router';
+import { routeReducer } from 'react-router-redux';
 import reducers from 'shared/reducers';
 
 const logger = createLogger();

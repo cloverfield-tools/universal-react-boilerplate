@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { browserHistory } from 'react-router';
-import { syncHistory, routeReducer } from 'redux-simple-router';
+import { syncHistory, routeReducer } from 'react-router-redux';
 import reducers from 'shared/reducers';
 
 import { Router, Route } from 'react-router';
