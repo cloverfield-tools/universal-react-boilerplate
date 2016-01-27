@@ -7,3 +7,4 @@ app/node_modules/public/js/bundle.*
 build/
 .idea/
 .eslintcache
+/reports
