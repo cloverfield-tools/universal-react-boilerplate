@@ -43,7 +43,7 @@ The React render happens on both the server and the client using shared code. Re
 
 ```
 npm install
-npm run build
+npm run build:dev
 npm start
 ```
 
