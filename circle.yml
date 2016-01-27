@@ -1,6 +1,6 @@
 machine:
   node:
-    version: v0.10.40
+    version: v4.2.6
 
 
 dependencies:
@@ -12,3 +12,5 @@ test:
     - ./node_modules/.bin/eslint --debug . --format tap | ./node_modules/.bin/tap-xunit > ${CIRCLE_TEST_REPORTS}/lint.xml && test ${PIPESTATUS[0]} -eq 0
     - NODE_PATH=source ./node_modules/.bin/babel-node source/test | ./node_modules/.bin/tap-xunit > ${CIRCLE_TEST_REPORTS}/test.xml && test ${PIPESTATUS[0]} -eq 0
     - npm outdated --depth=0
+    - npm run build -s
+    - REPORT_DIR=${CIRCLE_TEST_REPORTS} LOG_DIR=${CIRCLE_ARTIFACTS} npm run test:e2e -s
