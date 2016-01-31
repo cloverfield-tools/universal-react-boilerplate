@@ -11,7 +11,7 @@ test(`GET ${ route }`, nest => {
     request(app)
       .get(route)
       .expect(200)
-      .end((err, res) => {
+      .end(err => {
         assert.error(err, msg);
 
         assert.end();
