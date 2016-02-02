@@ -56,7 +56,6 @@
     "eslint": "1.10.3",
     "eslint-plugin-react": "3.16.1",
     "nightwatch-autorun": "2.1.2",
-    "react-router-redux": "^2.1.0",
     "react-transform-catch-errors": "1.0.1",
     "react-transform-hmr": "1.0.1",
     "redbox-react": "1.2.0",
