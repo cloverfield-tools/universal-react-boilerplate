@@ -1,9 +1,5 @@
-'use strict';
-
-
-const WAIT = 1000;
-const NODE_PORT = process.env.NODE_PORT || 3000;
-
+var WAIT = 1000;
+var NODE_PORT = process.env.NODE_PORT || 3000;
 
 module.exports = {
   'Smoketest' (browser) {
