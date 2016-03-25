@@ -9,7 +9,6 @@ module.exports = {
     root: path.join(__dirname, 'source')
   },
   entry: [
-    'webpack-hot-middleware/client',
     './source/client/index'
   ],
   output: {
@@ -18,7 +17,6 @@ module.exports = {
     publicPath: '/static/'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
   module: {
