@@ -39,7 +39,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:ericelliott/isomorphic-express-boilerplate.git"
+    "url": "git@github.com:cloverfield-tools/universal-react-boilerplate.git"
   },
   "devDependencies": {
     "babel-cli": "6.6.5",
@@ -79,12 +79,11 @@
     "react-router-redux": "4.0.0",
     "redux": "3.3.1",
     "redux-logger": "2.6.1",
-    "redux-simple-router": "2.0.4",
     "redux-thunk": "2.0.1"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ericelliott/isomorphic-express-boilerplate/issues"
+    "url": "https://github.com/cloverfield-tools/universal-react-boilerplate/issues"
   },
-  "homepage": "https://github.com/ericelliott/isomorphic-express-boilerplate"
+  "homepage": "https://github.com/cloverfield-tools/universal-react-boilerplate"
 }
