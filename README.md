@@ -1,4 +1,4 @@
-# Universal React Boilerplate 
+# Universal React Boilerplate
 
 [![Dependency Status](https://david-dm.org/cloverfield-tools/universal-react-boilerplate.svg)](https://david-dm.org/cloverfield-tools/universal-react-boilerplate)
 [![devDependency Status](https://david-dm.org/cloverfield-tools/universal-react-boilerplate/dev-status.svg)](https://david-dm.org/cloverfield-tools/universal-react-boilerplate#info=devDependencies)
@@ -13,7 +13,6 @@ A simple boilerplate Node app featuring:
 * Standard ES6 modules using Babel + webpack.
 * React + JSX + ES7 object spread via Babel.
 * Express 4.x.
-* Hot loading dev server.
 * Useful scripts and conventions for app development.
 
 
@@ -106,7 +105,7 @@ Some of these scripts may require a Unix/Linux environment. OS X and Linux come 
 
 The `package.json` file comes with the following scripts that you may find useful:
 
-* `npm start` runs a client-only devserver with hot loading
+* `npm start` runs a client-only devserver
 * `npm run build` rebuilds the client
 * `npm run watch` runs a dev console that reports lint and unit test errors on save
 * `npm run server` runs the actual server process
@@ -129,7 +128,7 @@ npm run start
 npm start
 ```
 
-## 
+##
 Log messages will be written to the console (stdout) in JSON format for convenient queries using tools like [Splunk](http://www.splunk.com/). You should be able to pipe the output to a third party logging service for aggregation without including that log aggregation logic in the app itself.
 
 

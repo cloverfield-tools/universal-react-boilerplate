@@ -11,8 +11,6 @@ app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath
 }));
 
-app.use(require('webpack-hot-middleware')(compiler));
-
 app.listen(NODE_PORT, NODE_HOST, (err) => err ?
   console.error(err) :
   console.log(`Listening at http://${NODE_HOST}:${NODE_PORT}`));

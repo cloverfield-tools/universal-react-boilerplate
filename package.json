@@ -1,7 +1,7 @@
 {
   "name": "universal-react-boilerplate",
   "version": "3.0.0",
-  "description": "A new Webpack boilerplate with hot reloading React components, and error handling on module and component level.",
+  "description": "A new Webpack boilerplate with React components and error handling on module and component level.",
   "scripts": {
     "clean": "rimraf build",
     "build:webpack": "webpack --config webpack.config.prod.js",
@@ -28,11 +28,6 @@
     "react",
     "reactjs",
     "boilerplate",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
     "webpack",
     "babel",
     "react-transform"
@@ -58,7 +53,6 @@
     "estraverse-fb": "1.3.1",
     "nightwatch-autorun": "2.3.1",
     "react-transform-catch-errors": "1.0.2",
-    "react-transform-hmr": "1.0.4",
     "redbox-react": "1.2.2",
     "rimraf": "2.5.2",
     "supertest": "1.2.0",
@@ -67,8 +61,7 @@
     "updtr": "0.1.7",
     "watch": "0.17.1",
     "webpack": "1.12.14",
-    "webpack-dev-middleware": "1.5.1",
-    "webpack-hot-middleware": "2.10.0"
+    "webpack-dev-middleware": "1.5.1"
   },
   "dependencies": {
     "express": "4.13.4",
