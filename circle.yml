@@ -6,6 +6,7 @@ machine:
 dependencies:
   pre:
     - npm install -g npm@3
+    - npm set progress=false
 
 test:
   override:
@@ -14,3 +15,7 @@ test:
     - npm outdated --depth=0
     - npm run build -s
     - REPORT_DIR=${CIRCLE_TEST_REPORTS} LOG_DIR=${CIRCLE_ARTIFACTS} npm run test:e2e -s
+
+general:
+  artifacts:
+    - reports
