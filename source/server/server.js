@@ -1,6 +1,8 @@
+import settings from 'server/settings';
 import app from 'server/app.js';
 
-const port = process.env.APP_PORT || 3000;
+const host = process.env.APP_HOST || settings.APP_HOST;
+const port = process.env.APP_PORT || settings.APP_PORT;
 
 app.listen(port, (err) => {
   if (err) {
@@ -8,5 +10,5 @@ app.listen(port, (err) => {
     return;
   }
 
-  console.log(`Listening at http://localhost:${ port }`);
+  console.log(`Listening at http://${ host }:${ port }`);
 });
