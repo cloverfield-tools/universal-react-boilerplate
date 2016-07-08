@@ -17,4 +17,4 @@ const serverURL = `http://${NODE_HOST}:${NODE_PORT}`;
 
 app.listen(NODE_PORT, NODE_HOST, (err) => err ?
   console.error(err) :
-  console.log(`Listening at ${serverURL}`)) && open(serverURL);
+  (console.log(`Listening at ${serverURL}`)) && open(serverURL));
