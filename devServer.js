@@ -1,3 +1,4 @@
+import open from 'open';
 import settings from 'server/settings';
 import app from 'server/app';
 import webpack from 'webpack';
@@ -12,6 +13,8 @@ app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath
 }));
 
+const serverURL = `http://${NODE_HOST}:${NODE_PORT}`;
+
 app.listen(NODE_PORT, NODE_HOST, (err) => err ?
   console.error(err) :
-  console.log(`Listening at http://${NODE_HOST}:${NODE_PORT}`));
+  (console.log(`Listening at ${serverURL}`)) && open(serverURL));
