@@ -8,8 +8,8 @@
     "build:webpack:dev": "webpack --config webpack.config.dev.js",
     "build": "npm run clean && npm run build:webpack",
     "build:dev": "npm run clean && npm run build:webpack:dev",
-    "start": "cross-env NODE_PATH=source babel-node devServer.js",
-    "server": "cross-env NODE_PATH=source babel-node source/server/server.js",
+    "start": "cross-env NODE_PATH=source babel-node devServer.js | bunyan",
+    "server": "cross-env NODE_PATH=source babel-node source/server/server.js | bunyan",
     "test": "cross-env NODE_PATH=source babel-node source/test/index.js",
     "test:e2e": "cross-env NODE_PORT=3000 NODE_PATH=source babel-node source/test/e2e.js",
     "lint": "eslint --cache .",
@@ -65,6 +65,8 @@
     "webpack-dev-middleware": "1.5.1"
   },
   "dependencies": {
+    "bunyan-request-logger": "^1.1.0",
+    "connect-cache-control": "^1.0.0",
     "express": "4.13.4",
     "react": "0.14.7",
     "react-dom": "0.14.7",
