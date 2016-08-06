@@ -14,7 +14,9 @@ const store = createStore(
   combineReducers({
     ...reducers,
     routing: routerReducer
-  })
+  }),
+  // hydrating server.
+  window.BOOTSTRAP_CLIENT_STATE
 );
 
 // Create an enhanced history that syncs navigation events with the store
