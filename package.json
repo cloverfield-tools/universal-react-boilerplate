@@ -65,8 +65,8 @@
     "webpack-dev-middleware": "1.5.1"
   },
   "dependencies": {
-    "bunyan-request-logger": "^1.1.0",
-    "connect-cache-control": "^1.0.0",
+    "bunyan-request-logger": "1.1.0",
+    "connect-cache-control": "1.0.0",
     "express": "4.13.4",
     "react": "0.14.7",
     "react-dom": "0.14.7",
