@@ -8,7 +8,7 @@
 
 # STATUS -- DEPRECATED
 
-Please check out [Next.js](https://zeit.co/blog/next) instead.
+**Please check out [Next.js](https://zeit.co/blog/next) instead.**
 
 
 # -- DEPRECATED docs (see above): --
