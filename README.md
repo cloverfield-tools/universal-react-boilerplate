@@ -6,6 +6,13 @@
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/learn-javascript-courses/javascript-questions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+# STATUS -- DEPRECATED
+
+Please check out [Next.js](https://zeit.co/blog/next) instead.
+
+
+
+
 A simple boilerplate Node app featuring:
 
 * Universal JavaScript. *Routing & Rendering with shared components, shared store, & shared routes.*
@@ -19,8 +26,6 @@ A simple boilerplate Node app featuring:
 ## Learn JavaScript with Eric Elliott
 
 The Universal React Boilerplate was written for the ["Learn JavaScript with Eric Elliott" courses](https://ericelliottjs.com/). A series of courses to teach people how to build great JavaScript apps for production. Don't just learn JavaScript. Learn how to build amazing things.
-
-## Status
 
 ### ES6 updates
 
